@@ -1,0 +1,55 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;  -- Para operaciones con números con signo (signed)
+
+entity genera_direcciones is
+    Port (
+        actual       : in  std_logic_vector(3 downto 0); -- Entrada ACTUAL de 4 bits
+        dir_Arriba   : out std_logic_vector(3 downto 0); -- Salida DIR_ARRIBA de 4 bits
+        dir_Adelante : out std_logic_vector(3 downto 0); -- Salida DIR_ADELANTE de 4 bits
+        dir_Abajo    : out std_logic_vector(3 downto 0); -- Salida DIR_ABAJO de 4 bits
+        dir_Atras    : out std_logic_vector(3 downto 0)  -- Salida DIR_ATRAS de 4 bits
+    );
+end genera_direcciones;
+
+architecture Behavioral of genera_direcciones is
+    signal Act       : signed(4 downto 0);  -- Entrada ACT con un bit más
+    signal Ar, Ad, Ab, At : signed(4 downto 0);  -- Señales intermedias de 5 bits
+begin
+    -- Convertir la entrada actual de 4 bits a una señal signed de 5 bits
+    process(actual)
+    begin
+        Act <= signed('0' & actual);  -- Concatenar un bit 0 al inicio para hacerla de 5 bits
+    end process;
+
+    -- Calcular los valores de Ar, Ad, Ab y At
+    process(Act)
+    begin
+        -- Realizar las operaciones
+        Ar <= Act - 4;  -- Act - 4
+        Ad <= Act + 1;  -- Act + 1
+        Ab <= Act + 4;  -- Act + 4
+        At <= Act - 1;  -- Act - 1
+
+        -- Comprobar si los resultados son negativos y asignar Act si es así
+        if Ar < 0 then
+            Ar <= Act;
+        end if;
+        if Ad < 0 then
+            Ad <= Act;
+        end if;
+        if Ab < 0 then
+            Ab <= Act;
+        end if;
+        if At < 0 then
+            At <= Act;
+        end if;
+    end process;
+
+    -- Asignar las salidas con los 4 bits menos significativos de las señales intermedias
+    dir_Arriba   <= std_logic_vector(Ar(3 downto 0));  -- Los 4 bits menos significativos de Ar
+    dir_Adelante <= std_logic_vector(Ad(3 downto 0));  -- Los 4 bits menos significativos de Ad
+    dir_Abajo    <= std_logic_vector(Ab(3 downto 0));  -- Los 4 bits menos significativos de Ab
+    dir_Atras    <= std_logic_vector(At(3 downto 0));  -- Los 4 bits menos significativos de At
+
+end Behavioral;

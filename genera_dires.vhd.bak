@@ -1,0 +1,41 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity compara_vecinos is
+    Port (
+        -- Tres señales de 4 bits de entrada
+		   Arriba : in std_logic_vector(3 downto 0);  --recibo de la matriz
+         Adelante : in std_logic_vector(3 downto 0);  --recibo de la matriz 
+			Abajo : in std_logic_vector(3 downto 0);   --recibo de la matriz
+         Atras :  in std_logic_vector(3 downto 0);   --recibo de la matriz
+        -- Salidas
+        sentido_nw: out std_logic_vector(1 downto 0)  -- 00: A menor, 01: B menor, 10: C menor
+    );
+end compara_vecinos;
+
+architecture Behavioral of compara_vecinos is
+  
+begin
+        -- Tres señales de 4 bits de entrada
+    -- Proceso para comparar las tres señales
+    process(Arriba, Adelante, Abajo, Atras)
+    begin
+        if Arriba < Adelante and Arriba < Abajo and Arriba < Atras then
+            -- A es la menor
+            sentido_nw <= "00";   --nuevo sentido arriba
+        elsif Adelante < Arriba and Adelante < Abajo and Adelante < Atras then
+            -- B es la menor
+            sentido_nw <= "01";  --nuevo sentido adelante
+			elsif Abajo < Arriba and Abajo < Adelante and Abajo < Atras then
+            -- B es la menor
+            sentido_nw <= "10"; --nuevo sentido abajo
+        else
+            -- Atras es el menor
+           sentido_nw <= "11"; --nuevo sentido atras
+        end if;
+    end process;
+
+end Behavioral;
+
