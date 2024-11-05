@@ -34,6 +34,7 @@ source_file = 1, D:/laberinto_completo/laberinto_todo/contador_n_bits.vhd
 source_file = 1, D:/laberinto_completo/laberinto_todo/pll.qip
 source_file = 1, D:/laberinto_completo/laberinto_todo/pll.vhd
 source_file = 1, D:/laberinto_completo/laberinto_todo/TODO.vwf
+source_file = 1, D:/laberinto_completo/laberinto_todo/simula_SISTEMA.vwf
 source_file = 1, D:/laberinto_completo/laberinto_todo/db/raton.cbx.xml
 source_file = 1, d:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, d:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

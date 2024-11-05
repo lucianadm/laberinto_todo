@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/02/2024 20:54:03"
+// DATE "11/05/2024 11:17:24"
 
 // 
 // Device: Altera EP4CE22F17C6 Package FBGA256
@@ -1581,22 +1581,32 @@ wire \inst92|MD[1]~0_combout ;
 wire \inst92|MD[0]~1_combout ;
 wire \inst92|MI[1]~0_combout ;
 wire \inst92|MI[0]~1_combout ;
-wire [2:0] \inst88|adc_mega_0|ADC_CTRL|address ;
-wire [11:0] \inst74|contador ;
-wire [5:0] \inst88|adc_mega_0|ADC_CTRL|addr_shift_reg ;
-wire [1:0] \inst22|accion_out ;
-wire [3:0] \inst88|adc_mega_0|ADC_CTRL|sclk_counter ;
+wire [3:0] \inst0|registro ;
+wire [12:0] \inst79|contador ;
+wire [3:0] \inst1|registro ;
+wire [31:0] \inst89|valor_entrada ;
+wire [3:0] \inst24|actual ;
+wire [4:0] \inst81|altpll_component|auto_generated|wire_pll1_clk ;
+wire [1:0] \inst21|sentido_reg ;
+wire [31:0] \inst90|valor_entrada ;
+wire [10:0] \inst88|adc_mega_0|ADC_CTRL|shift_reg ;
 wire [7:0] \inst88|adc_mega_0|ADC_CTRL|counter ;
+wire [11:0] \inst88|adc_mega_0|CH1 ;
+wire [11:0] \inst74|contador ;
+wire [1:0] \inst22|accion_out ;
+wire [11:0] \inst88|adc_mega_0|ADC_CTRL|reading0 ;
+wire [2:0] \inst88|adc_mega_0|ADC_CTRL|next_addr ;
+wire [11:0] \inst88|adc_mega_0|CH0 ;
+wire [5:0] \inst88|adc_mega_0|ADC_CTRL|addr_shift_reg ;
+wire [3:0] \inst88|adc_mega_0|ADC_CTRL|sclk_counter ;
+wire [2:0] \inst88|adc_mega_0|ADC_CTRL|address ;
+wire [11:0] \inst88|adc_mega_0|ADC_CTRL|reading1 ;
 wire [3:0] \inst4|registro ;
 wire [3:0] \inst8|registro ;
 wire [3:0] \inst12|registro ;
 wire [3:0] \inst13|registro ;
 wire [3:0] \inst14|registro ;
 wire [3:0] \inst10|registro ;
-wire [2:0] \inst88|adc_mega_0|ADC_CTRL|next_addr ;
-wire [11:0] \inst88|adc_mega_0|ADC_CTRL|reading0 ;
-wire [11:0] \inst88|adc_mega_0|ADC_CTRL|reading1 ;
-wire [10:0] \inst88|adc_mega_0|ADC_CTRL|shift_reg ;
 wire [3:0] \inst11|registro ;
 wire [3:0] \inst7|registro ;
 wire [3:0] \inst3|registro ;
@@ -1604,16 +1614,6 @@ wire [3:0] \inst2|registro ;
 wire [3:0] \inst6|registro ;
 wire [3:0] \inst5|registro ;
 wire [3:0] \inst9|registro ;
-wire [3:0] \inst1|registro ;
-wire [31:0] \inst89|valor_entrada ;
-wire [1:0] \inst21|sentido_reg ;
-wire [3:0] \inst0|registro ;
-wire [3:0] \inst24|actual ;
-wire [12:0] \inst79|contador ;
-wire [4:0] \inst81|altpll_component|auto_generated|wire_pll1_clk ;
-wire [31:0] \inst90|valor_entrada ;
-wire [11:0] \inst88|adc_mega_0|CH1 ;
-wire [11:0] \inst88|adc_mega_0|CH0 ;
 
 wire [4:0] \inst81|altpll_component|auto_generated|pll1_CLK_bus ;
 
