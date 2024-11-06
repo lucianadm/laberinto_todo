@@ -4,7 +4,7 @@ use IEEE.NUMERIC_STD.ALL;  -- Para usar "unsigned" y "to_integer"
 
 entity Comparador is
     generic (
-        VALOR : integer := 3000 -- Valor de referencia para la comparación (12 bits)
+        VALOR : integer := 1200 -- Valor de referencia para la comparación (12 bits)
     );
     port (
         reset  : in  STD_LOGIC;        -- Señal de reset

@@ -1,41 +1,46 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity contador_n_bits is
-    generic (
-        N : integer := 12  -- Número de bits del contador
-    );
-    port (
-        clk        : in  std_logic;
-        enable     : in  std_logic;
-        reset      : in  std_logic;
-        max_reached : out std_logic
-    );
-end contador_n_bits;
 
-architecture Behavioral of contador_n_bits is
-    signal contador : std_logic_vector(N-1 downto 0) := (others => '0');
-    signal max_value : std_logic_vector(N-1 downto 0) := (others => '1'); -- Valor máximo de cuenta
+	generic
+	(
+		bits : natural := 12
+	);
+
+	port
+	(
+		clk		  : in std_logic;
+		reset	  : in std_logic;
+		enable	  : in std_logic;
+		max_reached: out std_logic;
+		q		  : out std_logic_vector(bits-1 downto 0)
+	);
+
+end entity;
+
+architecture rtl of contador_n_bits is
+signal q_int: std_logic_vector(bits-1 downto 0);
 begin
 
-    process(clk, reset)
-    begin
-        if reset = '1' then
-            contador <= (others => '0');        -- Reiniciar el contador
-            max_reached <= '0';                 -- Reiniciar la señal de cuenta máxima
-        elsif rising_edge(clk) then
-            if enable = '1' then
-                if contador = max_value then    -- Si alcanza el valor máximo
-                    contador <= (others => '0'); -- Reiniciar el contador
-                    max_reached <= '1';         -- Señalizar que alcanzó el valor máximo
-                else
-                    contador <= contador + 1;   -- Incrementar el contador
-                    max_reached <= '0';         -- Mantener la señal de cuenta máxima en 0
-                end if;
-            end if;
-        end if;
-    end process;
+	process (clk,reset,enable)
+		variable   cnt		   : integer range 0 to 32767;--4095;
+	begin
+		if reset = '1' or enable = '0' then
+				-- Reset the counter to 0
+				cnt := 0;
 
-end Behavioral;
+		elsif (rising_edge(clk)) and enable = '1' then
+				-- Increment the counter if counting is enabled			   
+				cnt := cnt + 1;
+
+			end if;
+
+		-- Output the current count
+		q_int <= std_logic_vector(to_unsigned(cnt, bits));
+		q<=q_int;
+		max_reached<=q_int(0) and q_int(1) and q_int(2) and q_int(3) and q_int(4) and q_int(5) and q_int(6) and q_int(7) and q_int(8) and q_int(9) and q_int(10) and q_int(11);
+	end process;
+
+end rtl;

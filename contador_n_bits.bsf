@@ -33,15 +33,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "enable" (rect 0 0 24 12)(font "Arial" ))
-		(text "enable" (rect 21 43 45 55)(font "Arial" ))
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 43 41 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "reset" (rect 0 0 20 12)(font "Arial" ))
-		(text "reset" (rect 21 59 41 71)(font "Arial" ))
+		(text "enable" (rect 0 0 24 12)(font "Arial" ))
+		(text "enable" (rect 21 59 45 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
@@ -51,9 +51,16 @@ applicable agreement for further details.
 		(text "max_reached" (rect 108 27 163 39)(font "Arial" ))
 		(line (pt 184 32)(pt 168 32)(line_width 1))
 	)
+	(port
+		(pt 184 48)
+		(output)
+		(text "q[bits-1..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "q[bits-1..0]" (rect 125 43 163 55)(font "Arial" ))
+		(line (pt 184 48)(pt 168 48)(line_width 3))
+	)
 	(parameter
-		"N"
-		"8"
+		"bits"
+		"12"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing

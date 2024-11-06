@@ -2,44 +2,45 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module matriz
+# -- Compiling module contador_n_bits
 # 
 # Top level modules:
-# 	matriz
+# 	contador_n_bits
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module matriz_vlg_sample_tst
-# -- Compiling module matriz_vlg_check_tst
-# -- Compiling module matriz_vlg_vec_tst
+# -- Compiling module contador_n_bits_vlg_sample_tst
+# -- Compiling module contador_n_bits_vlg_check_tst
+# -- Compiling module contador_n_bits_vlg_vec_tst
 # 
 # Top level modules:
-# 	matriz_vlg_vec_tst
-# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.matriz_vlg_vec_tst 
-# Loading work.matriz_vlg_vec_tst
-# Loading work.matriz
-# Loading cycloneive_ver.cycloneive_pll
-# Loading cycloneive_ver.cycloneive_m_cntr
-# Loading cycloneive_ver.cycloneive_n_cntr
-# Loading cycloneive_ver.cycloneive_scale_cntr
+# 	contador_n_bits_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.contador_n_bits_vlg_vec_tst 
+# Loading work.contador_n_bits_vlg_vec_tst
+# Loading work.contador_n_bits
+# Loading cycloneive_ver.cycloneive_jtag
 # Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading work.matriz_vlg_sample_tst
-# Loading work.matriz_vlg_check_tst
+# Loading work.contador_n_bits_vlg_sample_tst
+# Loading work.contador_n_bits_vlg_check_tst
+# ** Warning: (vsim-3017) raton.vt(274): [TFMPC] - Too few port connections. Expected 9, found 5.
+# 
+#         Region: /contador_n_bits_vlg_vec_tst/i1
+# ** Warning: (vsim-3722) raton.vt(274): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# 
+# ** Warning: (vsim-3722) raton.vt(274): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# 
+# ** Warning: (vsim-3722) raton.vt(274): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# 
+# ** Warning: (vsim-3722) raton.vt(274): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# 
 # Loading altera_ver.PRIM_GDFF_LOW
-#  Note : Cycloneive PLL was reset
-# Time: 10000.000 ps  Instance: matriz_vlg_vec_tst.i1.\inst81|altpll_component|auto_generated|pll1 
-# ERROR! Vector Mismatch for output port Der_cerca :: @time = 10000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port Izq_cerca :: @time = 10000.000 ps
-#      Expected value = 0
-#      Real value = 1
-#  Note : Cycloneive PLL locked to incoming clock
-# Time: 270000.000 ps  Instance: matriz_vlg_vec_tst.i1.\inst81|altpll_component|auto_generated|pll1 
-#           2 mismatched vectors : Simulation failed !
-# ** Note: $finish    : raton.vt(786)
-#    Time: 1 us  Iteration: 0  Instance: /matriz_vlg_vec_tst/tb_out
+# Simulation passed !
+# ** Note: $finish    : raton.vt(250)
+#    Time: 1 us  Iteration: 0  Instance: /contador_n_bits_vlg_vec_tst/tb_out

@@ -5,6 +5,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity actualiza_actual is
     Port (
+	    reset : in  std_logic; 
         hab_actual  : in  std_logic;        -- Habilitador del registro ACTUAL
         sentido     : in  std_logic_vector(1 downto 0); -- Entrada de 2 bits (SENTIDO)
         actual_out  : out std_logic_vector(3 downto 0)  -- Salida del valor actual
@@ -30,9 +31,11 @@ begin
     end process;
 
     -- Proceso para actualizar el registro ACTUAL en cada flanco ascendente del reloj
-    process(hab_actual)
+    process(hab_actual,reset)
     begin
-        if rising_edge(hab_actual) then
+		if reset='1' then
+		actual <= "0000";
+        elsif rising_edge(hab_actual) then
                 -- Suma el valor de ca2 al registro actual y lo almacena
                 actual <= actual + ca2;
             end if;
