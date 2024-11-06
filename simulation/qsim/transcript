@@ -22,18 +22,24 @@
 # Loading cycloneive_ver.cycloneive_scale_cntr
 # Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading work.matriz_vlg_sample_tst
 # Loading work.matriz_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
 #  Note : Cycloneive PLL was reset
-# Time: 20000.000 ps  Instance: matriz_vlg_vec_tst.i1.\inst81|altpll_component|auto_generated|pll1 
+# Time: 10000.000 ps  Instance: matriz_vlg_vec_tst.i1.\inst81|altpll_component|auto_generated|pll1 
+# ERROR! Vector Mismatch for output port Der_cerca :: @time = 10000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Izq_cerca :: @time = 10000.000 ps
+#      Expected value = 0
+#      Real value = 1
 #  Note : Cycloneive PLL locked to incoming clock
-# Time: 210000.000 ps  Instance: matriz_vlg_vec_tst.i1.\inst81|altpll_component|auto_generated|pll1 
-# Simulation passed !
-# ** Note: $finish    : raton.vt(2182)
+# Time: 270000.000 ps  Instance: matriz_vlg_vec_tst.i1.\inst81|altpll_component|auto_generated|pll1 
+#           2 mismatched vectors : Simulation failed !
+# ** Note: $finish    : raton.vt(786)
 #    Time: 1 us  Iteration: 0  Instance: /matriz_vlg_vec_tst/tb_out

@@ -46,7 +46,7 @@ applicable agreement for further details.
 	)
 	(parameter
 		"VALOR"
-		"300"
+		"3000"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing

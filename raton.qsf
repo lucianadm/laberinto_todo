@@ -61,10 +61,10 @@ set_location_assignment PIN_T12 -to velD
 set_location_assignment PIN_R8 -to clk
 set_location_assignment PIN_J15 -to El_reset
 set_location_assignment PIN_B8 -to Linea
-set_location_assignment PIN_T14 -to MD[1]
-set_location_assignment PIN_T13 -to MD[0]
-set_location_assignment PIN_T15 -to MI[1]
-set_location_assignment PIN_F13 -to MI[0]
+set_location_assignment PIN_T13 -to MD[1]
+set_location_assignment PIN_T14 -to MD[0]
+set_location_assignment PIN_F13 -to MI[1]
+set_location_assignment PIN_T15 -to MI[0]
 set_location_assignment PIN_A8 -to Muro
 set_location_assignment PIN_B10 -to ADC_DIN
 set_location_assignment PIN_A9 -to ADC_DOUT
@@ -105,5 +105,16 @@ set_global_assignment -name VHDL_FILE contador_n_bits.vhd
 set_global_assignment -name QIP_FILE pll.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE TODO.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simula_SISTEMA.vwf
+set_location_assignment PIN_A11 -to actual[3]
+set_location_assignment PIN_B13 -to actual[2]
+set_location_assignment PIN_A13 -to actual[1]
+set_location_assignment PIN_A15 -to actual[0]
+set_location_assignment PIN_B1 -to sentido[1]
+set_location_assignment PIN_F3 -to sentido[0]
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE stp2.stp
+set_global_assignment -name SLD_FILE "D:/laberinto_completo/laberinto_todo/stp2_auto_stripped.stp"
+set_location_assignment PIN_L3 -to Izq_cerca
+set_location_assignment PIN_D1 -to Der_cerca
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/laberinto_completo/laberinto_todo/simula_SISTEMA.vwf"

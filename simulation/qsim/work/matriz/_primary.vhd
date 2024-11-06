@@ -11,7 +11,6 @@ entity matriz is
         sentido         : out    vl_logic_vector(1 downto 0);
         Hab_sentido     : out    vl_logic;
         D_Abajo         : out    vl_logic;
-        C0              : out    vl_logic_vector(3 downto 0);
         D_Arriba        : out    vl_logic;
         D_Adelante      : out    vl_logic;
         D_Atras         : out    vl_logic;
@@ -25,7 +24,10 @@ entity matriz is
         C11             : out    vl_logic_vector(3 downto 0);
         C12             : out    vl_logic_vector(3 downto 0);
         C13             : out    vl_logic_vector(3 downto 0);
-        C2              : out    vl_logic_vector(3 downto 0);
+        C23             : out    vl_logic;
+        C22             : out    vl_logic;
+        C21             : out    vl_logic;
+        C20             : out    vl_logic;
         C3              : out    vl_logic_vector(3 downto 0);
         C4              : out    vl_logic_vector(3 downto 0);
         C5              : out    vl_logic_vector(3 downto 0);
@@ -49,6 +51,7 @@ entity matriz is
         ADC_DIN         : out    vl_logic;
         Izq_cerca       : out    vl_logic;
         Der_cerca       : out    vl_logic;
+        C2              : out    vl_logic;
         accion_out      : out    vl_logic_vector(1 downto 0);
         CH0             : out    vl_logic_vector(11 downto 0);
         CH1             : out    vl_logic_vector(11 downto 0);

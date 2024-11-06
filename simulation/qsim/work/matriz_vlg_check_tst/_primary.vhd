@@ -7,8 +7,7 @@ entity matriz_vlg_check_tst is
         ADC_CS_N        : in     vl_logic;
         ADC_DIN         : in     vl_logic;
         ADC_SCLK        : in     vl_logic;
-        C0              : in     vl_logic_vector(3 downto 0);
-        C2              : in     vl_logic_vector(3 downto 0);
+        C2              : in     vl_logic;
         C3              : in     vl_logic_vector(3 downto 0);
         C4              : in     vl_logic_vector(3 downto 0);
         C5              : in     vl_logic_vector(3 downto 0);
@@ -20,6 +19,10 @@ entity matriz_vlg_check_tst is
         C11             : in     vl_logic_vector(3 downto 0);
         C12             : in     vl_logic_vector(3 downto 0);
         C13             : in     vl_logic_vector(3 downto 0);
+        C20             : in     vl_logic;
+        C21             : in     vl_logic;
+        C22             : in     vl_logic;
+        C23             : in     vl_logic;
         CE1             : in     vl_logic_vector(3 downto 0);
         CH0             : in     vl_logic_vector(11 downto 0);
         CH1             : in     vl_logic_vector(11 downto 0);
