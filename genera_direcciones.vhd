@@ -34,16 +34,16 @@ begin
 
         -- Comprobar si los resultados son negativos y asignar Act si es así
         if Ar_var < 0 then
-            Ar_var := Act;
+            Ar_var := "00000";
         end if;
-        if Ad_var < 0 then
-            Ad_var := Act;
+        if Ad_var = 4 or Ad_var = 8 or Ad_var = 12 then
+            Ad_var :=  "00000";
         end if;
-        if Ab_var < 0 then
-            Ab_var := Act;
+        if Ab_var > 15 then
+            Ab_var :=  "00000";
         end if;
-        if At_var < 0 then
-            At_var := Act;
+        if At_var < 0 or At_var = 3 or At_var = 7 or At_var = 3 or At_var = 11 then
+            At_var :=  "00000";
         end if;
 
         -- Asignar las salidas con los 4 bits menos significativos de las variables

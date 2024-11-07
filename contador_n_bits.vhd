@@ -6,7 +6,7 @@ entity contador_n_bits is
 
 	generic
 	(
-		bits : natural := 12
+		bits : natural := 13
 	);
 
 	port
@@ -25,7 +25,7 @@ signal q_int: std_logic_vector(bits-1 downto 0);
 begin
 
 	process (clk,reset,enable)
-		variable   cnt		   : integer range 0 to 32767;--4095;
+		variable   cnt		   : integer range 0 to 8191;--4095;
 	begin
 		if reset = '1' or enable = '0' then
 				-- Reset the counter to 0

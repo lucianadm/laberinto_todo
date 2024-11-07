@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/Users/LSC/Desktop/Laberinto/laberinto_TYDD2_v1/output_files/") File("raton.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("C:/Users/LSC/Desktop/Laberinto/laberinto_TYDD2_v1_soloCONTARlineas/output_files/") File("raton.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
