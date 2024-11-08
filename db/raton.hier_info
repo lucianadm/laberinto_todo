@@ -1,9 +1,8 @@
 |matriz
 ena_Ar <= actualiza_muro:pone_muro.ena_Ar
-Hab_muro <= control:inst24.Hab_muro
+Hab_muro <= control:inst20.Hab_muro
 El_reset => inst86.IN0
-c2 <= pll:inst81.c2
-clk => pll:inst81.inclk0
+clk => control:inst20.clock
 clk => casillero:inst0.clk
 clk => casillero:inst4.clk
 clk => casillero:inst8.clk
@@ -19,11 +18,12 @@ clk => casillero:inst6.clk
 clk => casillero:inst5.clk
 clk => casillero:inst9.clk
 clk => casillero:inst1.clk
+clk => pll:inst81.inclk0
 Linea => inst87.IN0
 Muro => inst26.IN0
 sentido[0] <= sentido:inst21.sentido_out[0]
 sentido[1] <= sentido:inst21.sentido_out[1]
-Hab_sentido <= control:inst24.Hab_sentido
+Hab_sentido <= control:inst20.Hab_sentido
 D_Abajo <= actualiza_muro:pone_muro.Ab
 D_Arriba <= actualiza_muro:pone_muro.Ar
 D_Adelante <= actualiza_muro:pone_muro.Ad
@@ -32,7 +32,7 @@ actual[0] <= actualiza_actual:inst90.actual_out[0]
 actual[1] <= actualiza_actual:inst90.actual_out[1]
 actual[2] <= actualiza_actual:inst90.actual_out[2]
 actual[3] <= actualiza_actual:inst90.actual_out[3]
-Hab_Actual <= control:inst24.Hab_Actual
+Hab_Actual <= control:inst20.Hab_Actual
 ena_Ad <= actualiza_muro:pone_muro.ena_Ad
 ena_Ab <= actualiza_muro:pone_muro.ena_Ab
 ena_At <= actualiza_muro:pone_muro.ena_At
@@ -87,8 +87,9 @@ dir_Atras[3] <= genera_direcciones:inst98.dir_Atras[3]
 fin <= inst80.DB_MAX_OUTPUT_PORT_TYPE
 H[0] <= control_motor:inst89.H[0]
 H[1] <= control_motor:inst89.H[1]
+c2 <= pll:inst81.c2
 ADC_DOUT => adc:inst88.ADC_DOUT
-Hab_accion <= control:inst24.Hab_accion
+Hab_accion <= control:inst20.Hab_accion
 locked <= pll:inst81.locked
 velD <= pll:inst81.c1
 velI <= pll:inst81.c1
@@ -182,12 +183,14 @@ ena_Ab <= ena_Ab~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ena_At <= ena_At~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|matriz|control:inst24
+|matriz|control:inst20
 reset => reg_fstate.Avanza.OUTPUTSELECT
 reset => reg_fstate.Actualiza_Posc.OUTPUTSELECT
 reset => reg_fstate.Choca.OUTPUTSELECT
 reset => reg_fstate.Actual_sent.OUTPUTSELECT
 reset => reg_fstate.Decide_Accion.OUTPUTSELECT
+reset => reg_fstate.choca1.OUTPUTSELECT
+reset => reg_fstate.choca2.OUTPUTSELECT
 reset => Hab_sentido.OUTPUTSELECT
 reset => Hab_Actual.OUTPUTSELECT
 reset => Hab_muro.OUTPUTSELECT
@@ -209,88 +212,6 @@ Hab_sentido <= Hab_sentido.DB_MAX_OUTPUT_PORT_TYPE
 Hab_Actual <= Hab_Actual.DB_MAX_OUTPUT_PORT_TYPE
 Hab_muro <= Hab_muro.DB_MAX_OUTPUT_PORT_TYPE
 Hab_accion <= Hab_accion.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|matriz|pll:inst81
-areset => altpll:altpll_component.areset
-inclk0 => altpll:altpll_component.inclk[0]
-c0 <= altpll:altpll_component.clk[0]
-c1 <= altpll:altpll_component.clk[1]
-c2 <= altpll:altpll_component.clk[2]
-locked <= altpll:altpll_component.locked
-
-
-|matriz|pll:inst81|altpll:altpll_component
-inclk[0] => pll_altpll:auto_generated.inclk[0]
-inclk[1] => pll_altpll:auto_generated.inclk[1]
-fbin => ~NO_FANOUT~
-pllena => ~NO_FANOUT~
-clkswitch => ~NO_FANOUT~
-areset => pll_altpll:auto_generated.areset
-pfdena => ~NO_FANOUT~
-clkena[0] => ~NO_FANOUT~
-clkena[1] => ~NO_FANOUT~
-clkena[2] => ~NO_FANOUT~
-clkena[3] => ~NO_FANOUT~
-clkena[4] => ~NO_FANOUT~
-clkena[5] => ~NO_FANOUT~
-extclkena[0] => ~NO_FANOUT~
-extclkena[1] => ~NO_FANOUT~
-extclkena[2] => ~NO_FANOUT~
-extclkena[3] => ~NO_FANOUT~
-scanclk => ~NO_FANOUT~
-scanclkena => ~NO_FANOUT~
-scanaclr => ~NO_FANOUT~
-scanread => ~NO_FANOUT~
-scanwrite => ~NO_FANOUT~
-scandata => ~NO_FANOUT~
-phasecounterselect[0] => ~NO_FANOUT~
-phasecounterselect[1] => ~NO_FANOUT~
-phasecounterselect[2] => ~NO_FANOUT~
-phasecounterselect[3] => ~NO_FANOUT~
-phaseupdown => ~NO_FANOUT~
-phasestep => ~NO_FANOUT~
-configupdate => ~NO_FANOUT~
-fbmimicbidir <> <GND>
-clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
-clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
-clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
-clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
-clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
-extclk[0] <= <GND>
-extclk[1] <= <GND>
-extclk[2] <= <GND>
-extclk[3] <= <GND>
-clkbad[0] <= <GND>
-clkbad[1] <= <GND>
-enable1 <= <GND>
-enable0 <= <GND>
-activeclock <= <GND>
-clkloss <= <GND>
-locked <= pll_altpll:auto_generated.locked
-scandataout <= <GND>
-scandone <= <GND>
-sclkout0 <= <GND>
-sclkout1 <= <GND>
-phasedone <= <GND>
-vcooverrange <= <GND>
-vcounderrange <= <GND>
-fbout <= <GND>
-fref <= <GND>
-icdrclk <= <GND>
-
-
-|matriz|pll:inst81|altpll:altpll_component|pll_altpll:auto_generated
-areset => pll_lock_sync.ACLR
-areset => pll1.ARESET
-clk[0] <= pll1.CLK
-clk[1] <= pll1.CLK1
-clk[2] <= pll1.CLK2
-clk[3] <= pll1.CLK3
-clk[4] <= pll1.CLK4
-inclk[0] => pll1.CLK
-inclk[1] => pll1.CLK1
-locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|sentido:inst21
@@ -2094,6 +2015,88 @@ q[9] <= cnt[9].DB_MAX_OUTPUT_PORT_TYPE
 q[10] <= cnt[10].DB_MAX_OUTPUT_PORT_TYPE
 q[11] <= cnt[11].DB_MAX_OUTPUT_PORT_TYPE
 q[12] <= cnt[12].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|matriz|pll:inst81
+areset => altpll:altpll_component.areset
+inclk0 => altpll:altpll_component.inclk[0]
+c0 <= altpll:altpll_component.clk[0]
+c1 <= altpll:altpll_component.clk[1]
+c2 <= altpll:altpll_component.clk[2]
+locked <= altpll:altpll_component.locked
+
+
+|matriz|pll:inst81|altpll:altpll_component
+inclk[0] => pll_altpll:auto_generated.inclk[0]
+inclk[1] => pll_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => pll_altpll:auto_generated.areset
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= pll_altpll:auto_generated.locked
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|matriz|pll:inst81|altpll:altpll_component|pll_altpll:auto_generated
+areset => pll_lock_sync.ACLR
+areset => pll1.ARESET
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|control_motor:inst89

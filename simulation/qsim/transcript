@@ -2,45 +2,150 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module contador_n_bits
+# -- Compiling module matriz
 # 
 # Top level modules:
-# 	contador_n_bits
+# 	matriz
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module contador_n_bits_vlg_sample_tst
-# -- Compiling module contador_n_bits_vlg_check_tst
-# -- Compiling module contador_n_bits_vlg_vec_tst
+# -- Compiling module matriz_vlg_sample_tst
+# -- Compiling module matriz_vlg_check_tst
+# -- Compiling module matriz_vlg_vec_tst
 # 
 # Top level modules:
-# 	contador_n_bits_vlg_vec_tst
-# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.contador_n_bits_vlg_vec_tst 
-# Loading work.contador_n_bits_vlg_vec_tst
-# Loading work.contador_n_bits
-# Loading cycloneive_ver.cycloneive_jtag
+# 	matriz_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.matriz_vlg_vec_tst 
+# Loading work.matriz_vlg_vec_tst
+# Loading work.matriz
 # Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_pll
+# Loading cycloneive_ver.cycloneive_m_cntr
+# Loading cycloneive_ver.cycloneive_n_cntr
+# Loading cycloneive_ver.cycloneive_scale_cntr
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# Loading cycloneive_ver.cycloneive_ram_block
-# Loading cycloneive_ver.cycloneive_ram_register
-# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_io_obuf
-# Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading work.contador_n_bits_vlg_sample_tst
-# Loading work.contador_n_bits_vlg_check_tst
-# ** Warning: (vsim-3017) raton.vt(274): [TFMPC] - Too few port connections. Expected 9, found 5.
-# 
-#         Region: /contador_n_bits_vlg_vec_tst/i1
-# ** Warning: (vsim-3722) raton.vt(274): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
-# 
-# ** Warning: (vsim-3722) raton.vt(274): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
-# 
-# ** Warning: (vsim-3722) raton.vt(274): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
-# 
-# ** Warning: (vsim-3722) raton.vt(274): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
-# 
+# Loading work.matriz_vlg_sample_tst
+# Loading work.matriz_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# Simulation passed !
-# ** Note: $finish    : raton.vt(250)
-#    Time: 1 us  Iteration: 0  Instance: /contador_n_bits_vlg_vec_tst/tb_out
+#  Note : Cycloneive PLL locked to incoming clock
+# Time: 170000.000 ps  Instance: matriz_vlg_vec_tst.i1.\inst81|altpll_component|auto_generated|pll1 
+# ERROR! Vector Mismatch for output port Ab[0] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+# ERROR! Vector Mismatch for output port Ab[2] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+# ERROR! Vector Mismatch for output port accion_out[0] :: @time = 1000000.000 ps
+#      Expected value = 00
+#      Real value = 11
+# ERROR! Vector Mismatch for output port accion_out[1] :: @time = 1000000.000 ps
+#      Expected value = 00
+#      Real value = 11
+# ERROR! Vector Mismatch for output port Ad[0] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+# ERROR! Vector Mismatch for output port Ad[2] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+# ERROR! Vector Mismatch for output port Ar[1] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0110
+# ERROR! Vector Mismatch for output port Ar[2] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0110
+# ERROR! Vector Mismatch for output port At[1] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0110
+# ERROR! Vector Mismatch for output port At[2] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0110
+# ERROR! Vector Mismatch for output port C3[0] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0011
+# ERROR! Vector Mismatch for output port C3[1] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0011
+# ERROR! Vector Mismatch for output port C5[2] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0100
+# ERROR! Vector Mismatch for output port C7[1] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0010
+# ERROR! Vector Mismatch for output port C10[1] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0010
+# ERROR! Vector Mismatch for output port C11[0] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0001
+# ERROR! Vector Mismatch for output port C12[0] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0011
+# ERROR! Vector Mismatch for output port C12[1] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0011
+# ERROR! Vector Mismatch for output port C13[1] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0010
+# ERROR! Vector Mismatch for output port CE1[0] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+# ERROR! Vector Mismatch for output port CE1[2] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+# ERROR! Vector Mismatch for output port MD[0] :: @time = 1000000.000 ps
+#      Expected value = 00
+#      Real value = 01
+# ERROR! Vector Mismatch for output port MI[0] :: @time = 1000000.000 ps
+#      Expected value = 00
+#      Real value = 01
+# ERROR! Vector Mismatch for output port sentido[0] :: @time = 1000000.000 ps
+#      Expected value = 00
+#      Real value = 01
+# ERROR! Vector Mismatch for output port sentido_nw[0] :: @time = 1000000.000 ps
+#      Expected value = 00
+#      Real value = 01
+# ERROR! Vector Mismatch for output port actual[0] :: @time = 5140000.000 ps
+#      Expected value = 0000
+#      Real value = 0001
+# ERROR! Vector Mismatch for output port Hab_Actual :: @time = 5140000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Hab_accion :: @time = 8980000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Hab_sentido :: @time = 9000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Ab[1] :: @time = 20500000.000 ps
+#      Expected value = 0000
+#      Real value = 0011
+# ERROR! Vector Mismatch for output port actual[1] :: @time = 20500000.000 ps
+#      Expected value = 0000
+#      Real value = 0010
+# ERROR! Vector Mismatch for output port Ad[1] :: @time = 20500000.000 ps
+#      Expected value = 0000
+#      Real value = 0011
+# ERROR! Vector Mismatch for output port At[0] :: @time = 20500000.000 ps
+#      Expected value = 0000
+#      Real value = 0101
+# ERROR! Vector Mismatch for output port sentido_nw[1] :: @time = 39700000.000 ps
+#      Expected value = 00
+#      Real value = 10
+# ERROR! Vector Mismatch for output port sentido[1] :: @time = 48680000.000 ps
+#      Expected value = 00
+#      Real value = 10
+# ERROR! Vector Mismatch for output port MD[1] :: @time = 49020000.000 ps
+#      Expected value = 00
+#      Real value = 10
+# ERROR! Vector Mismatch for output port Ab[3] :: @time = 76820000.000 ps
+#      Expected value = 0000
+#      Real value = 1111
+# ERROR! Vector Mismatch for output port Hab_muro :: @time = 76820000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#          38 mismatched vectors : Simulation failed !
+# ** Note: $finish    : raton.vt(1715)
+#    Time: 100 us  Iteration: 0  Instance: /matriz_vlg_vec_tst/tb_out

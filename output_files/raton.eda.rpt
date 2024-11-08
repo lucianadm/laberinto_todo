@@ -1,5 +1,5 @@
 EDA Netlist Writer report for raton
-Thu Nov 07 13:10:20 2024
+Thu Nov 07 22:00:52 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Nov 07 13:10:20 2024 ;
+; EDA Netlist Writer Status ; Successful - Thu Nov 07 22:00:52 2024 ;
 ; Revision Name             ; raton                                 ;
 ; Top-level Entity Name     ; matriz                                ;
 ; Family                    ; Cyclone IV E                          ;
@@ -65,13 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                      ;
-+-------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                 ;
-+-------------------------------------------------------------------------------------------------+
-; C:/Users/LSC/Desktop/Laberinto/laberinto_TYDD2_v1_soloCONTARlineas/simulation/modelsim/raton.vo ;
-+-------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Simulation Generated Files                                               ;
++--------------------------------------------------------------------------+
+; Generated Files                                                          ;
++--------------------------------------------------------------------------+
+; D:/laberinto_completo/laberinto_todo_simula/simulation/modelsim/raton.vo ;
++--------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 07 13:10:18 2024
+    Info: Processing started: Thu Nov 07 22:00:50 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off raton -c raton
-Info (204019): Generated file raton.vo in folder "C:/Users/LSC/Desktop/Laberinto/laberinto_TYDD2_v1_soloCONTARlineas/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file raton.vo in folder "D:/laberinto_completo/laberinto_todo_simula/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4542 megabytes
-    Info: Processing ended: Thu Nov 07 13:10:20 2024
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4528 megabytes
+    Info: Processing ended: Thu Nov 07 22:00:53 2024
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
 
 

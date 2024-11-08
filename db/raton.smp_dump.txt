@@ -17,10 +17,12 @@ fstate.Izq_Cerca 0 0 1 0 0 0 1
 fstate.Der_Cerca 0 1 0 0 0 0 1 
 fstate.GANO 1 0 0 0 0 0 1 
 
-State Machine - |matriz|control:inst24|fstate
-Name fstate.Decide_Accion fstate.Actual_sent fstate.Choca fstate.Actualiza_Posc fstate.Avanza 
-fstate.Avanza 0 0 0 0 0 
-fstate.Actualiza_Posc 0 0 0 1 1 
-fstate.Choca 0 0 1 0 1 
-fstate.Actual_sent 0 1 0 0 1 
-fstate.Decide_Accion 1 0 0 0 1 
+State Machine - |matriz|control:inst20|fstate
+Name fstate.choca2 fstate.choca1 fstate.Decide_Accion fstate.Actual_sent fstate.Choca fstate.Actualiza_Posc fstate.Avanza 
+fstate.Avanza 0 0 0 0 0 0 0 
+fstate.Actualiza_Posc 0 0 0 0 0 1 1 
+fstate.Choca 0 0 0 0 1 0 1 
+fstate.Actual_sent 0 0 0 1 0 0 1 
+fstate.Decide_Accion 0 0 1 0 0 0 1 
+fstate.choca1 0 1 0 0 0 0 1 
+fstate.choca2 1 0 0 0 0 0 1 
