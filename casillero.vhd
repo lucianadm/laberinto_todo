@@ -76,7 +76,7 @@ begin
     process(inArriba, sel_Arriba)
     begin
         if sel_Arriba = '1' then
-            mux_Arriba <= "1100";  -- Cuatro unos
+            mux_Arriba <= "1110";  -- Cuatro unos
         else
             mux_Arriba <=  inArriba; -- Entradas reales
         end if;
@@ -86,7 +86,7 @@ begin
     process(inAdelante, sel_Adelante)
     begin
         if sel_Adelante = '1' then
-            mux_Adelante <= "1100";
+            mux_Adelante <= "1110";
         else
             mux_Adelante <=  inAdelante; 
         end if;
@@ -96,7 +96,7 @@ begin
     process(inAbajo, sel_Abajo)
     begin
         if sel_Abajo = '1' then
-            mux_Abajo <= "1100";
+            mux_Abajo <= "1110";
         else
             mux_Abajo <=  inAbajo; 
         end if;
@@ -106,7 +106,7 @@ begin
     process(inAtras, sel_Atras)
     begin
         if sel_Atras = '1' then
-            mux_Atras <= "1100";
+            mux_Atras <= "1110";
         else
             mux_Atras <= inAtras; 
         end if;

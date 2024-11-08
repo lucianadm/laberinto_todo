@@ -7,7 +7,7 @@ currState.transState 0 1 0 1 0
 currState.doneState 1 0 0 1 0 
 currState.pauseState 0 0 0 1 1 
 
-State Machine - |matriz|control_motor:inst89|fstate
+State Machine - |matriz|control_motor:inst24|fstate
 Name fstate.GANO fstate.Der_Cerca fstate.Izq_Cerca fstate.Gira_Izq_90 fstate.Gira_Der_180 fstate.Gira_Der_90 fstate.Derecho 
 fstate.Derecho 0 0 0 0 0 0 0 
 fstate.Gira_Der_90 0 0 0 0 0 1 1 
@@ -17,7 +17,7 @@ fstate.Izq_Cerca 0 0 1 0 0 0 1
 fstate.Der_Cerca 0 1 0 0 0 0 1 
 fstate.GANO 1 0 0 0 0 0 1 
 
-State Machine - |matriz|control:inst20|fstate
+State Machine - |matriz|control:inst25|fstate
 Name fstate.choca2 fstate.choca1 fstate.Decide_Accion fstate.Actual_sent fstate.Choca fstate.Actualiza_Posc fstate.Avanza 
 fstate.Avanza 0 0 0 0 0 0 0 
 fstate.Actualiza_Posc 0 0 0 0 0 1 1 

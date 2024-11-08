@@ -5,6 +5,7 @@ use IEEE.NUMERIC_STD.ALL;  -- Para operaciones con números con signo (signed)
 
 entity genera_direcciones is
     Port (
+	     sentido     : in  std_logic_vector(1 downto 0); -- Entrada ACTUAL de 4 bits
         actual       : in  std_logic_vector(3 downto 0); -- Entrada ACTUAL de 4 bits
         dir_Arriba   : out std_logic_vector(3 downto 0); -- Salida DIR_ARRIBA de 4 bits
         dir_Adelante : out std_logic_vector(3 downto 0); -- Salida DIR_ADELANTE de 4 bits
@@ -46,11 +47,33 @@ begin
             At_var :=  "00000";
         end if;
 
-        -- Asignar las salidas con los 4 bits menos significativos de las variables
-        dir_Arriba   <= std_logic_vector(Ar_var(3 downto 0));  -- Los 4 bits menos significativos de Ar
-        dir_Adelante <= std_logic_vector(Ad_var(3 downto 0));  -- Los 4 bits menos significativos de Ad
-        dir_Abajo    <= std_logic_vector(Ab_var(3 downto 0));  -- Los 4 bits menos significativos de Ab
-        dir_Atras    <= std_logic_vector(At_var(3 downto 0));  -- Los 4 bits menos significativos de At
+          case sentido is
+            when "00" =>   --arriba
+					dir_Arriba   <= std_logic_vector(At_var(3 downto 0));  -- Los 4 bits menos significativos de Ar
+					dir_Adelante <= std_logic_vector(Ar_var(3 downto 0));  -- Los 4 bits menos significativos de Ad
+					dir_Abajo    <= std_logic_vector(Ad_var(3 downto 0));  -- Los 4 bits menos significativos de Ab
+					dir_Atras    <= std_logic_vector(Ab_var(3 downto 0));  -- Los 4 bits menos significativos de At
+            when "01" => --> adelante
+					dir_Arriba   <= std_logic_vector(Ar_var(3 downto 0));  -- Los 4 bits menos significativos de Ar
+					dir_Adelante <= std_logic_vector(Ad_var(3 downto 0));  -- Los 4 bits menos significativos de Ad
+					dir_Abajo    <= std_logic_vector(Ab_var(3 downto 0));  -- Los 4 bits menos significativos de Ab
+					dir_Atras    <= std_logic_vector(At_var(3 downto 0));  -- Los 4 bits menos significativos de At
+            when "10" => --hacia abajo
+					dir_Arriba   <= std_logic_vector(At_var(3 downto 0));  -- Los 4 bits menos significativos de Ar
+					dir_Adelante <= std_logic_vector(Ab_var(3 downto 0));  -- Los 4 bits menos significativos de Ad
+					dir_Abajo    <= std_logic_vector(Ad_var(3 downto 0));  -- Los 4 bits menos significativos de Ab
+					dir_Atras    <= std_logic_vector(Ar_var(3 downto 0));  -- Los 4 bits menos significativos de At
+            when "11" =>
+					dir_Arriba   <= std_logic_vector(Ar_var(3 downto 0));  -- Los 4 bits menos significativos de Ar
+					dir_Adelante <= std_logic_vector(At_var(3 downto 0));  -- Los 4 bits menos significativos de Ad
+					dir_Abajo    <= std_logic_vector(Ab_var(3 downto 0));  -- Los 4 bits menos significativos de Ab
+					dir_Atras    <= std_logic_vector(Ad_var(3 downto 0));  -- Los 4 bits menos significativos de At
+            when others =>
+                -- No hacer nada por defecto, señales ya están inicializadas en '0'
+                null;
+        end case;
+		  
+
     end process;
 
 end Behavioral;
