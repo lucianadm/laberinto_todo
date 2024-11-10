@@ -18,7 +18,8 @@ entity casillero is
         -- Señal de habilitacion
         
         -- Salida de 4 bits
-        out_value : out std_logic_vector(3 downto 0)
+        out_value : out std_logic_vector(3 downto 0);
+		  muros: out std_logic_vector(3 downto 0)--Ar Ad Ab At (Norte, este, sur y oeste)
     );
 end casillero;
 
@@ -158,6 +159,6 @@ begin
     -- Atsignar el valor registrado a la salida
     out_value <= registro;
 	 
---
+     muros<=sel_Arriba & sel_Adelante & sel_Abajo & sel_Atras;
     --out_value <= std_logic_vector(min_value);
 end Behavioral;

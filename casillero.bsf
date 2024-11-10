@@ -128,6 +128,13 @@ applicable agreement for further details.
 		(text "out_value[3..0]" (rect 136 27 195 39)(font "Arial" ))
 		(line (pt 216 32)(pt 200 32)(line_width 3))
 	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "muros[3..0]" (rect 0 0 46 12)(font "Arial" ))
+		(text "muros[3..0]" (rect 149 43 195 55)(font "Arial" ))
+		(line (pt 216 48)(pt 200 48)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 200 256)(line_width 1))
 	)

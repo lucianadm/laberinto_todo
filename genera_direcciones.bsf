@@ -26,16 +26,9 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "sentido[1..0]" (rect 0 0 46 12)(font "Arial" ))
-		(text "sentido[1..0]" (rect 21 27 67 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
 		(text "actual[3..0]" (rect 0 0 42 12)(font "Arial" ))
-		(text "actual[3..0]" (rect 21 43 63 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "actual[3..0]" (rect 21 27 63 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 216 32)

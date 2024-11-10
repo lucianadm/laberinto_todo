@@ -7,7 +7,7 @@ currState.transState 0 1 0 1 0
 currState.doneState 1 0 0 1 0 
 currState.pauseState 0 0 0 1 1 
 
-State Machine - |matriz|control_motor:inst24|fstate
+State Machine - |matriz|control_motor:inst109|fstate
 Name fstate.GANO fstate.Der_Cerca fstate.Izq_Cerca fstate.Gira_Izq_90 fstate.Gira_Der_180 fstate.Gira_Der_90 fstate.Derecho 
 fstate.Derecho 0 0 0 0 0 0 0 
 fstate.Gira_Der_90 0 0 0 0 0 1 1 

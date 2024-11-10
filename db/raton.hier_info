@@ -1,5 +1,5 @@
 |matriz
-ena_Ar <= actualiza_muro:inst89.ena_Ar
+ena_Ar <= actualiza_muro:inst107.ena_Ar
 El_reset => inst86.IN0
 Hab_muro <= control:inst25.Hab_muro
 clk => control:inst25.clock
@@ -24,22 +24,18 @@ Muro => inst26.IN0
 sentido[0] <= sentido:inst21.sentido_out[0]
 sentido[1] <= sentido:inst21.sentido_out[1]
 Hab_sentido <= control:inst25.Hab_sentido
-D_Abajo <= actualiza_muro:inst89.Ab
-D_Arriba <= actualiza_muro:inst89.Ar
-D_Adelante <= actualiza_muro:inst89.Ad
-D_Atras <= actualiza_muro:inst89.At
+D_Arriba <= actualiza_muro:inst107.Ar
+D_Adelante <= actualiza_muro:inst107.Ad
+D_Abajo <= actualiza_muro:inst107.Ab
+D_Atras <= actualiza_muro:inst107.At
 actual[0] <= actualiza_actual:inst90.actual_out[0]
 actual[1] <= actualiza_actual:inst90.actual_out[1]
 actual[2] <= actualiza_actual:inst90.actual_out[2]
 actual[3] <= actualiza_actual:inst90.actual_out[3]
 Hab_Actual <= control:inst25.Hab_Actual
-ena_Ad <= actualiza_muro:inst89.ena_Ad
-ena_Ab <= actualiza_muro:inst89.ena_Ab
-ena_At <= actualiza_muro:inst89.ena_At
-CE1[0] <= casillero:inst1.out_value[0]
-CE1[1] <= casillero:inst1.out_value[1]
-CE1[2] <= casillero:inst1.out_value[2]
-CE1[3] <= casillero:inst1.out_value[3]
+ena_Ad <= actualiza_muro:inst107.ena_Ad
+ena_Ab <= actualiza_muro:inst107.ena_Ab
+ena_At <= actualiza_muro:inst107.ena_At
 C10[0] <= casillero:inst10.out_value[0]
 C10[1] <= casillero:inst10.out_value[1]
 C10[2] <= casillero:inst10.out_value[2]
@@ -56,66 +52,77 @@ C13[0] <= casillero:inst13.out_value[0]
 C13[1] <= casillero:inst13.out_value[1]
 C13[2] <= casillero:inst13.out_value[2]
 C13[3] <= casillero:inst13.out_value[3]
-C3[0] <= casillero:inst3.out_value[0]
-C3[1] <= casillero:inst3.out_value[1]
-C3[2] <= casillero:inst3.out_value[2]
-C3[3] <= casillero:inst3.out_value[3]
-C5[0] <= casillero:inst5.out_value[0]
-C5[1] <= casillero:inst5.out_value[1]
-C5[2] <= casillero:inst5.out_value[2]
-C5[3] <= casillero:inst5.out_value[3]
-C7[0] <= casillero:inst7.out_value[0]
-C7[1] <= casillero:inst7.out_value[1]
-C7[2] <= casillero:inst7.out_value[2]
-C7[3] <= casillero:inst7.out_value[3]
-dir_Abajo[0] <= genera_direcciones:inst79.dir_Abajo[0]
-dir_Abajo[1] <= genera_direcciones:inst79.dir_Abajo[1]
-dir_Abajo[2] <= genera_direcciones:inst79.dir_Abajo[2]
-dir_Abajo[3] <= genera_direcciones:inst79.dir_Abajo[3]
-dir_Adelante[0] <= genera_direcciones:inst79.dir_Adelante[0]
-dir_Adelante[1] <= genera_direcciones:inst79.dir_Adelante[1]
-dir_Adelante[2] <= genera_direcciones:inst79.dir_Adelante[2]
-dir_Adelante[3] <= genera_direcciones:inst79.dir_Adelante[3]
-dir_Arriba[0] <= genera_direcciones:inst79.dir_Arriba[0]
-dir_Arriba[1] <= genera_direcciones:inst79.dir_Arriba[1]
-dir_Arriba[2] <= genera_direcciones:inst79.dir_Arriba[2]
-dir_Arriba[3] <= genera_direcciones:inst79.dir_Arriba[3]
-dir_Atras[0] <= genera_direcciones:inst79.dir_Atras[0]
-dir_Atras[1] <= genera_direcciones:inst79.dir_Atras[1]
-dir_Atras[2] <= genera_direcciones:inst79.dir_Atras[2]
-dir_Atras[3] <= genera_direcciones:inst79.dir_Atras[3]
+dir_Abajo[0] <= genera_direcciones:inst99.dir_Abajo[0]
+dir_Abajo[1] <= genera_direcciones:inst99.dir_Abajo[1]
+dir_Abajo[2] <= genera_direcciones:inst99.dir_Abajo[2]
+dir_Abajo[3] <= genera_direcciones:inst99.dir_Abajo[3]
+dir_Adelante[0] <= genera_direcciones:inst99.dir_Adelante[0]
+dir_Adelante[1] <= genera_direcciones:inst99.dir_Adelante[1]
+dir_Adelante[2] <= genera_direcciones:inst99.dir_Adelante[2]
+dir_Adelante[3] <= genera_direcciones:inst99.dir_Adelante[3]
+dir_Arriba[0] <= genera_direcciones:inst99.dir_Arriba[0]
+dir_Arriba[1] <= genera_direcciones:inst99.dir_Arriba[1]
+dir_Arriba[2] <= genera_direcciones:inst99.dir_Arriba[2]
+dir_Arriba[3] <= genera_direcciones:inst99.dir_Arriba[3]
+dir_Atras[0] <= genera_direcciones:inst99.dir_Atras[0]
+dir_Atras[1] <= genera_direcciones:inst99.dir_Atras[1]
+dir_Atras[2] <= genera_direcciones:inst99.dir_Atras[2]
+dir_Atras[3] <= genera_direcciones:inst99.dir_Atras[3]
 fin <= inst80.DB_MAX_OUTPUT_PORT_TYPE
-H[0] <= control_motor:inst24.H[0]
-H[1] <= control_motor:inst24.H[1]
+H[0] <= control_motor:inst109.H[0]
+H[1] <= control_motor:inst109.H[1]
 c2 <= pll:inst81.c2
-ADC_DOUT => adc:inst88.ADC_DOUT
+D => control_motor:inst109.D
+I => control_motor:inst109.I
+quieto <= compara_vecinos:inst15.quieto
 Hab_accion <= control:inst25.Hab_accion
 locked <= pll:inst81.locked
 velD <= pll:inst81.c1
 velI <= pll:inst81.c1
 ADC_SCLK <= adc:inst88.ADC_SCLK
+ADC_DOUT => adc:inst88.ADC_DOUT
 ADC_CS_N <= adc:inst88.ADC_CS_N
 ADC_DIN <= adc:inst88.ADC_DIN
 Izq_cerca <= Comparador:inst102.salida
 Der_cerca <= Comparador:inst103.salida
+m_Ar <= muros_actual:inst23.m_Ar
+m_Ad <= muros_actual:inst23.m_Ad
+m_Ab <= muros_actual:inst23.m_Ab
+m_At <= muros_actual:inst23.m_At
 Ab[0] <= uno_o_passthrough:inst77.out_bits[0]
 Ab[1] <= uno_o_passthrough:inst77.out_bits[1]
 Ab[2] <= uno_o_passthrough:inst77.out_bits[2]
 Ab[3] <= uno_o_passthrough:inst77.out_bits[3]
+Abajo[0] <= tristate_control:inst18.output_data[0]
+Abajo[1] <= tristate_control:inst18.output_data[1]
+Abajo[2] <= tristate_control:inst18.output_data[2]
+Abajo[3] <= tristate_control:inst18.output_data[3]
 accion_out[0] <= accion:inst22.accion_out[0]
 accion_out[1] <= accion:inst22.accion_out[1]
 Ad[0] <= uno_o_passthrough:inst76.out_bits[0]
 Ad[1] <= uno_o_passthrough:inst76.out_bits[1]
 Ad[2] <= uno_o_passthrough:inst76.out_bits[2]
 Ad[3] <= uno_o_passthrough:inst76.out_bits[3]
+Adelante[0] <= tristate_control:inst17.output_data[0]
+Adelante[1] <= tristate_control:inst17.output_data[1]
+Adelante[2] <= tristate_control:inst17.output_data[2]
+Adelante[3] <= tristate_control:inst17.output_data[3]
 Ar[0] <= uno_o_passthrough:inst75.out_bits[0]
 Ar[1] <= uno_o_passthrough:inst75.out_bits[1]
 Ar[2] <= uno_o_passthrough:inst75.out_bits[2]
 Ar[3] <= uno_o_passthrough:inst75.out_bits[3]
+Arriba[0] <= tristate_control:inst16.output_data[0]
+Arriba[1] <= tristate_control:inst16.output_data[1]
+Arriba[2] <= tristate_control:inst16.output_data[2]
+Arriba[3] <= tristate_control:inst16.output_data[3]
 At[0] <= uno_o_passthrough:inst78.out_bits[0]
 At[1] <= uno_o_passthrough:inst78.out_bits[1]
 At[2] <= uno_o_passthrough:inst78.out_bits[2]
 At[3] <= uno_o_passthrough:inst78.out_bits[3]
+Atras[0] <= tristate_control:inst19.output_data[0]
+Atras[1] <= tristate_control:inst19.output_data[1]
+Atras[2] <= tristate_control:inst19.output_data[2]
+Atras[3] <= tristate_control:inst19.output_data[3]
 CH0[0] <= adc:inst88.CH0[0]
 CH0[1] <= adc:inst88.CH0[1]
 CH0[2] <= adc:inst88.CH0[2]
@@ -140,59 +147,43 @@ CH1[8] <= adc:inst88.CH1[8]
 CH1[9] <= adc:inst88.CH1[9]
 CH1[10] <= adc:inst88.CH1[10]
 CH1[11] <= adc:inst88.CH1[11]
-MD[0] <= control_motor:inst24.MD[0]
-MD[1] <= control_motor:inst24.MD[1]
-MI[0] <= control_motor:inst24.MI[0]
-MI[1] <= control_motor:inst24.MI[1]
+MD[0] <= control_motor:inst109.MD[0]
+MD[1] <= control_motor:inst109.MD[1]
+MI[0] <= control_motor:inst109.MI[0]
+MI[1] <= control_motor:inst109.MI[1]
 sentido_nw[0] <= compara_vecinos:inst15.sentido_nw[0]
 sentido_nw[1] <= compara_vecinos:inst15.sentido_nw[1]
 
 
-|matriz|actualiza_muro:inst89
+|matriz|actualiza_muro:inst107
 reset => ena_At~reg0.ACLR
 reset => ena_Ab~reg0.ACLR
 reset => ena_Ad~reg0.ACLR
 reset => ena_Ar~reg0.ACLR
-reset => At~reg0.ACLR
-reset => Ab~reg0.ACLR
-reset => Ad~reg0.ACLR
-reset => Ar~reg0.ACLR
-reset => ena_At_i.ACLR
-reset => ena_Ab_i.ACLR
-reset => ena_Ad_i.ACLR
-reset => ena_Ar_i.ACLR
-reset => At_i.ACLR
-reset => Ab_i.ACLR
-reset => Ad_i.ACLR
-reset => Ar_i.ACLR
-sentido[0] => Mux3.IN5
-sentido[0] => Mux4.IN5
-sentido[0] => Mux2.IN5
-sentido[0] => Mux5.IN5
-sentido[0] => Mux1.IN5
-sentido[0] => Mux6.IN5
 sentido[0] => Mux0.IN5
-sentido[0] => Mux7.IN5
-sentido[1] => Mux3.IN4
-sentido[1] => Mux4.IN4
-sentido[1] => Mux2.IN4
-sentido[1] => Mux5.IN4
-sentido[1] => Mux1.IN4
-sentido[1] => Mux6.IN4
+sentido[0] => Mux1.IN5
+sentido[0] => Mux2.IN5
+sentido[0] => Mux3.IN5
+sentido[0] => Equal0.IN1
+sentido[0] => Equal1.IN1
+sentido[0] => Equal2.IN0
+sentido[0] => Equal3.IN1
 sentido[1] => Mux0.IN4
-sentido[1] => Mux7.IN4
+sentido[1] => Mux1.IN4
+sentido[1] => Mux2.IN4
+sentido[1] => Mux3.IN4
+sentido[1] => Equal0.IN0
+sentido[1] => Equal1.IN0
+sentido[1] => Equal2.IN1
+sentido[1] => Equal3.IN0
 clk => ena_At~reg0.CLK
 clk => ena_Ab~reg0.CLK
 clk => ena_Ad~reg0.CLK
 clk => ena_Ar~reg0.CLK
-clk => At~reg0.CLK
-clk => Ab~reg0.CLK
-clk => Ad~reg0.CLK
-clk => Ar~reg0.CLK
-Ar <= Ar~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Ad <= Ad~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Ab <= Ab~reg0.DB_MAX_OUTPUT_PORT_TYPE
-At <= At~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Ar <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+Ad <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+Ab <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+At <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
 ena_Ar <= ena_Ar~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ena_Ad <= ena_Ad~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ena_Ab <= ena_Ab~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -232,56 +223,76 @@ sentido_out[1] <= sentido_reg[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|compara_vecinos:inst15
+reset => quieto.OUTPUTSELECT
+reset => sentido_nw[1]$latch.ACLR
+reset => sentido_nw[0]$latch.PRESET
+Arriba[0] => Equal0.IN7
 Arriba[0] => LessThan0.IN4
 Arriba[0] => LessThan1.IN4
 Arriba[0] => LessThan2.IN4
+Arriba[1] => Equal0.IN6
 Arriba[1] => LessThan0.IN3
 Arriba[1] => LessThan1.IN3
 Arriba[1] => LessThan2.IN3
+Arriba[2] => Equal0.IN5
 Arriba[2] => LessThan0.IN2
 Arriba[2] => LessThan1.IN2
 Arriba[2] => LessThan2.IN2
+Arriba[3] => Equal0.IN4
 Arriba[3] => LessThan0.IN1
 Arriba[3] => LessThan1.IN1
 Arriba[3] => LessThan2.IN1
+Adelante[0] => Equal1.IN7
 Adelante[0] => LessThan0.IN8
 Adelante[0] => LessThan3.IN4
 Adelante[0] => LessThan4.IN4
+Adelante[1] => Equal1.IN6
 Adelante[1] => LessThan0.IN7
 Adelante[1] => LessThan3.IN3
 Adelante[1] => LessThan4.IN3
+Adelante[2] => Equal1.IN5
 Adelante[2] => LessThan0.IN6
 Adelante[2] => LessThan3.IN2
 Adelante[2] => LessThan4.IN2
+Adelante[3] => Equal1.IN4
 Adelante[3] => LessThan0.IN5
 Adelante[3] => LessThan3.IN1
 Adelante[3] => LessThan4.IN1
+Abajo[0] => Equal2.IN7
 Abajo[0] => LessThan1.IN8
 Abajo[0] => LessThan3.IN8
 Abajo[0] => LessThan5.IN4
+Abajo[1] => Equal2.IN6
 Abajo[1] => LessThan1.IN7
 Abajo[1] => LessThan3.IN7
 Abajo[1] => LessThan5.IN3
+Abajo[2] => Equal2.IN5
 Abajo[2] => LessThan1.IN6
 Abajo[2] => LessThan3.IN6
 Abajo[2] => LessThan5.IN2
+Abajo[3] => Equal2.IN4
 Abajo[3] => LessThan1.IN5
 Abajo[3] => LessThan3.IN5
 Abajo[3] => LessThan5.IN1
+Atras[0] => Equal3.IN7
 Atras[0] => LessThan2.IN8
 Atras[0] => LessThan4.IN8
 Atras[0] => LessThan5.IN8
+Atras[1] => Equal3.IN6
 Atras[1] => LessThan2.IN7
 Atras[1] => LessThan4.IN7
 Atras[1] => LessThan5.IN7
+Atras[2] => Equal3.IN5
 Atras[2] => LessThan2.IN6
 Atras[2] => LessThan4.IN6
 Atras[2] => LessThan5.IN6
+Atras[3] => Equal3.IN4
 Atras[3] => LessThan2.IN5
 Atras[3] => LessThan4.IN5
 Atras[3] => LessThan5.IN5
-sentido_nw[0] <= sentido_nw.DB_MAX_OUTPUT_PORT_TYPE
-sentido_nw[1] <= sentido_nw.DB_MAX_OUTPUT_PORT_TYPE
+sentido_nw[0] <= sentido_nw[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+sentido_nw[1] <= sentido_nw[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+quieto <= quieto.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|uno_o_passthrough:inst77
@@ -299,7 +310,7 @@ out_bits[2] <= out_bits.DB_MAX_OUTPUT_PORT_TYPE
 out_bits[3] <= out_bits.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|matriz|tristate_control:inst18
+|matriz|muros_actual:inst23
 input_0[0] => Mux3.IN0
 input_0[1] => Mux2.IN0
 input_0[2] => Mux1.IN0
@@ -380,10 +391,10 @@ select_line[3] => Mux0.IN16
 select_line[3] => Mux1.IN16
 select_line[3] => Mux2.IN16
 select_line[3] => Mux3.IN16
-output_data[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-output_data[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-output_data[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-output_data[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+m_Ar <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+m_Ad <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+m_Ab <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+m_At <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|casillero:inst0
@@ -453,89 +464,93 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|decoder4to16:inst
-A[0] => Mux0.IN19
-A[0] => Mux1.IN19
-A[0] => Mux2.IN19
-A[0] => Mux3.IN19
-A[0] => Mux4.IN19
-A[0] => Mux5.IN19
-A[0] => Mux6.IN19
-A[0] => Mux7.IN19
-A[0] => Mux8.IN19
-A[0] => Mux9.IN19
-A[0] => Mux10.IN19
-A[0] => Mux11.IN19
-A[0] => Mux12.IN19
-A[0] => Mux13.IN19
-A[0] => Mux14.IN19
-A[0] => Mux15.IN19
-A[1] => Mux0.IN18
-A[1] => Mux1.IN18
-A[1] => Mux2.IN18
-A[1] => Mux3.IN18
-A[1] => Mux4.IN18
-A[1] => Mux5.IN18
-A[1] => Mux6.IN18
-A[1] => Mux7.IN18
-A[1] => Mux8.IN18
-A[1] => Mux9.IN18
-A[1] => Mux10.IN18
-A[1] => Mux11.IN18
-A[1] => Mux12.IN18
-A[1] => Mux13.IN18
-A[1] => Mux14.IN18
-A[1] => Mux15.IN18
-A[2] => Mux0.IN17
-A[2] => Mux1.IN17
-A[2] => Mux2.IN17
-A[2] => Mux3.IN17
-A[2] => Mux4.IN17
-A[2] => Mux5.IN17
-A[2] => Mux6.IN17
-A[2] => Mux7.IN17
-A[2] => Mux8.IN17
-A[2] => Mux9.IN17
-A[2] => Mux10.IN17
-A[2] => Mux11.IN17
-A[2] => Mux12.IN17
-A[2] => Mux13.IN17
-A[2] => Mux14.IN17
-A[2] => Mux15.IN17
-A[3] => Mux0.IN16
-A[3] => Mux1.IN16
-A[3] => Mux2.IN16
-A[3] => Mux3.IN16
-A[3] => Mux4.IN16
-A[3] => Mux5.IN16
-A[3] => Mux6.IN16
-A[3] => Mux7.IN16
-A[3] => Mux8.IN16
-A[3] => Mux9.IN16
-A[3] => Mux10.IN16
-A[3] => Mux11.IN16
-A[3] => Mux12.IN16
-A[3] => Mux13.IN16
-A[3] => Mux14.IN16
-A[3] => Mux15.IN16
-EN => Y0.OUTPUTSELECT
-EN => Y1.OUTPUTSELECT
-EN => Y2.OUTPUTSELECT
-EN => Y3.OUTPUTSELECT
-EN => Y4.OUTPUTSELECT
-EN => Y5.OUTPUTSELECT
-EN => Y6.OUTPUTSELECT
-EN => Y7.OUTPUTSELECT
-EN => Y8.OUTPUTSELECT
-EN => Y9.OUTPUTSELECT
-EN => Y10.OUTPUTSELECT
-EN => Y11.OUTPUTSELECT
-EN => Y12.OUTPUTSELECT
-EN => Y13.OUTPUTSELECT
-EN => Y14.OUTPUTSELECT
-EN => Y15.OUTPUTSELECT
+A[0] => Equal0.IN3
+A[0] => Equal1.IN3
+A[0] => Equal2.IN2
+A[0] => Equal3.IN3
+A[0] => Equal4.IN2
+A[0] => Equal5.IN3
+A[0] => Equal6.IN1
+A[0] => Equal7.IN3
+A[0] => Equal8.IN2
+A[0] => Equal9.IN3
+A[0] => Equal10.IN1
+A[0] => Equal11.IN3
+A[0] => Equal12.IN1
+A[0] => Equal13.IN3
+A[0] => Equal14.IN0
+A[0] => Equal15.IN3
+A[1] => Equal0.IN2
+A[1] => Equal1.IN2
+A[1] => Equal2.IN3
+A[1] => Equal3.IN2
+A[1] => Equal4.IN1
+A[1] => Equal5.IN1
+A[1] => Equal6.IN3
+A[1] => Equal7.IN2
+A[1] => Equal8.IN1
+A[1] => Equal9.IN1
+A[1] => Equal10.IN3
+A[1] => Equal11.IN2
+A[1] => Equal12.IN0
+A[1] => Equal13.IN0
+A[1] => Equal14.IN3
+A[1] => Equal15.IN2
+A[2] => Equal0.IN1
+A[2] => Equal1.IN1
+A[2] => Equal2.IN1
+A[2] => Equal3.IN1
+A[2] => Equal4.IN3
+A[2] => Equal5.IN2
+A[2] => Equal6.IN2
+A[2] => Equal7.IN1
+A[2] => Equal8.IN0
+A[2] => Equal9.IN0
+A[2] => Equal10.IN0
+A[2] => Equal11.IN0
+A[2] => Equal12.IN3
+A[2] => Equal13.IN2
+A[2] => Equal14.IN2
+A[2] => Equal15.IN1
+A[3] => Equal0.IN0
+A[3] => Equal1.IN0
+A[3] => Equal2.IN0
+A[3] => Equal3.IN0
+A[3] => Equal4.IN0
+A[3] => Equal5.IN0
+A[3] => Equal6.IN0
+A[3] => Equal7.IN0
+A[3] => Equal8.IN3
+A[3] => Equal9.IN2
+A[3] => Equal10.IN2
+A[3] => Equal11.IN1
+A[3] => Equal12.IN2
+A[3] => Equal13.IN1
+A[3] => Equal14.IN1
+A[3] => Equal15.IN0
+EN => Y0.IN1
+EN => Y1.IN1
+EN => Y2.IN1
+EN => Y3.IN1
+EN => Y4.IN1
+EN => Y5.IN1
+EN => Y6.IN1
+EN => Y7.IN1
+EN => Y8.IN1
+EN => Y9.IN1
+EN => Y10.IN1
+EN => Y11.IN1
+EN => Y12.IN1
+EN => Y13.IN1
+EN => Y14.IN1
+EN => Y15.IN1
 Y0 <= Y0.DB_MAX_OUTPUT_PORT_TYPE
 Y1 <= Y1.DB_MAX_OUTPUT_PORT_TYPE
 Y2 <= Y2.DB_MAX_OUTPUT_PORT_TYPE
@@ -643,6 +658,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|casillero:inst8
@@ -712,6 +731,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|casillero:inst12
@@ -781,6 +804,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|F:inst_F8
@@ -857,6 +884,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|F:inst_9
@@ -933,6 +964,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|F:inst_F10
@@ -1016,6 +1051,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|casillero:inst11
@@ -1085,6 +1124,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|F:inst32
@@ -1161,6 +1204,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|F:inst31
@@ -1237,6 +1284,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|casillero:inst2
@@ -1306,6 +1357,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|casillero:inst6
@@ -1375,6 +1430,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|casillero:inst5
@@ -1444,6 +1503,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|casillero:inst9
@@ -1513,6 +1576,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|casillero:inst1
@@ -1582,6 +1649,10 @@ out_value[0] <= registro[0].DB_MAX_OUTPUT_PORT_TYPE
 out_value[1] <= registro[1].DB_MAX_OUTPUT_PORT_TYPE
 out_value[2] <= registro[2].DB_MAX_OUTPUT_PORT_TYPE
 out_value[3] <= registro[3].DB_MAX_OUTPUT_PORT_TYPE
+muros[0] <= sel_Atras.DB_MAX_OUTPUT_PORT_TYPE
+muros[1] <= sel_Abajo.DB_MAX_OUTPUT_PORT_TYPE
+muros[2] <= sel_Adelante.DB_MAX_OUTPUT_PORT_TYPE
+muros[3] <= sel_Arriba.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|F:inst_F3
@@ -1633,43 +1704,113 @@ Y[2] <= <VCC>
 Y[3] <= <VCC>
 
 
-|matriz|genera_direcciones:inst79
-sentido[0] => dir_Arriba.OUTPUTSELECT
-sentido[0] => dir_Arriba.OUTPUTSELECT
-sentido[0] => dir_Arriba.OUTPUTSELECT
-sentido[0] => dir_Arriba.OUTPUTSELECT
-sentido[0] => Mux0.IN1
-sentido[0] => Mux1.IN1
-sentido[0] => Mux2.IN1
-sentido[0] => Mux3.IN1
-sentido[0] => dir_Abajo.OUTPUTSELECT
-sentido[0] => dir_Abajo.OUTPUTSELECT
-sentido[0] => dir_Abajo.OUTPUTSELECT
-sentido[0] => dir_Abajo.OUTPUTSELECT
-sentido[0] => Mux4.IN1
-sentido[0] => Mux5.IN1
-sentido[0] => Mux6.IN1
-sentido[0] => Mux7.IN1
-sentido[1] => Mux0.IN0
-sentido[1] => Mux1.IN0
-sentido[1] => Mux2.IN0
-sentido[1] => Mux3.IN0
-sentido[1] => Mux4.IN0
-sentido[1] => Mux5.IN0
-sentido[1] => Mux6.IN0
-sentido[1] => Mux7.IN0
+|matriz|tristate_control:inst18
+input_0[0] => Mux3.IN0
+input_0[1] => Mux2.IN0
+input_0[2] => Mux1.IN0
+input_0[3] => Mux0.IN0
+input_1[0] => Mux3.IN1
+input_1[1] => Mux2.IN1
+input_1[2] => Mux1.IN1
+input_1[3] => Mux0.IN1
+input_2[0] => Mux3.IN2
+input_2[1] => Mux2.IN2
+input_2[2] => Mux1.IN2
+input_2[3] => Mux0.IN2
+input_3[0] => Mux3.IN3
+input_3[1] => Mux2.IN3
+input_3[2] => Mux1.IN3
+input_3[3] => Mux0.IN3
+input_4[0] => Mux3.IN4
+input_4[1] => Mux2.IN4
+input_4[2] => Mux1.IN4
+input_4[3] => Mux0.IN4
+input_5[0] => Mux3.IN5
+input_5[1] => Mux2.IN5
+input_5[2] => Mux1.IN5
+input_5[3] => Mux0.IN5
+input_6[0] => Mux3.IN6
+input_6[1] => Mux2.IN6
+input_6[2] => Mux1.IN6
+input_6[3] => Mux0.IN6
+input_7[0] => Mux3.IN7
+input_7[1] => Mux2.IN7
+input_7[2] => Mux1.IN7
+input_7[3] => Mux0.IN7
+input_8[0] => Mux3.IN8
+input_8[1] => Mux2.IN8
+input_8[2] => Mux1.IN8
+input_8[3] => Mux0.IN8
+input_9[0] => Mux3.IN9
+input_9[1] => Mux2.IN9
+input_9[2] => Mux1.IN9
+input_9[3] => Mux0.IN9
+input_10[0] => Mux3.IN10
+input_10[1] => Mux2.IN10
+input_10[2] => Mux1.IN10
+input_10[3] => Mux0.IN10
+input_11[0] => Mux3.IN11
+input_11[1] => Mux2.IN11
+input_11[2] => Mux1.IN11
+input_11[3] => Mux0.IN11
+input_12[0] => Mux3.IN12
+input_12[1] => Mux2.IN12
+input_12[2] => Mux1.IN12
+input_12[3] => Mux0.IN12
+input_13[0] => Mux3.IN13
+input_13[1] => Mux2.IN13
+input_13[2] => Mux1.IN13
+input_13[3] => Mux0.IN13
+input_14[0] => Mux3.IN14
+input_14[1] => Mux2.IN14
+input_14[2] => Mux1.IN14
+input_14[3] => Mux0.IN14
+input_15[0] => Mux3.IN15
+input_15[1] => Mux2.IN15
+input_15[2] => Mux1.IN15
+input_15[3] => Mux0.IN15
+select_line[0] => Mux0.IN19
+select_line[0] => Mux1.IN19
+select_line[0] => Mux2.IN19
+select_line[0] => Mux3.IN19
+select_line[1] => Mux0.IN18
+select_line[1] => Mux1.IN18
+select_line[1] => Mux2.IN18
+select_line[1] => Mux3.IN18
+select_line[2] => Mux0.IN17
+select_line[2] => Mux1.IN17
+select_line[2] => Mux2.IN17
+select_line[2] => Mux3.IN17
+select_line[3] => Mux0.IN16
+select_line[3] => Mux1.IN16
+select_line[3] => Mux2.IN16
+select_line[3] => Mux3.IN16
+output_data[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+output_data[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+output_data[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+output_data[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|matriz|F:inst79
+Y[0] <= <VCC>
+Y[1] <= <VCC>
+Y[2] <= <VCC>
+Y[3] <= <VCC>
+
+
+|matriz|genera_direcciones:inst99
 actual[0] => Add1.IN10
 actual[0] => Add3.IN10
 actual[0] => LessThan0.IN10
-actual[0] => Ar_var[0].DATAA
+actual[0] => Ar_var.DATAA
 actual[0] => LessThan1.IN10
-actual[0] => Ab_var[0].DATAA
+actual[0] => Ab_var.DATAA
 actual[1] => Add1.IN9
 actual[1] => Add3.IN9
 actual[1] => LessThan0.IN9
-actual[1] => Ar_var[1].DATAA
+actual[1] => Ar_var.DATAA
 actual[1] => LessThan1.IN9
-actual[1] => Ab_var[1].DATAA
+actual[1] => Ab_var.DATAA
 actual[2] => Add0.IN6
 actual[2] => Add1.IN8
 actual[2] => Add2.IN6
@@ -1678,22 +1819,22 @@ actual[3] => Add0.IN5
 actual[3] => Add1.IN7
 actual[3] => Add2.IN5
 actual[3] => Add3.IN7
-dir_Arriba[0] <= dir_Arriba.DB_MAX_OUTPUT_PORT_TYPE
-dir_Arriba[1] <= dir_Arriba.DB_MAX_OUTPUT_PORT_TYPE
-dir_Arriba[2] <= dir_Arriba.DB_MAX_OUTPUT_PORT_TYPE
-dir_Arriba[3] <= dir_Arriba.DB_MAX_OUTPUT_PORT_TYPE
-dir_Adelante[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-dir_Adelante[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-dir_Adelante[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-dir_Adelante[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-dir_Abajo[0] <= dir_Abajo.DB_MAX_OUTPUT_PORT_TYPE
-dir_Abajo[1] <= dir_Abajo.DB_MAX_OUTPUT_PORT_TYPE
-dir_Abajo[2] <= dir_Abajo.DB_MAX_OUTPUT_PORT_TYPE
-dir_Abajo[3] <= dir_Abajo.DB_MAX_OUTPUT_PORT_TYPE
-dir_Atras[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
-dir_Atras[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
-dir_Atras[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
-dir_Atras[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+dir_Arriba[0] <= Ar_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Arriba[1] <= Ar_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Arriba[2] <= Ar_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Arriba[3] <= Ar_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Adelante[0] <= Ad_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Adelante[1] <= Ad_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Adelante[2] <= Ad_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Adelante[3] <= Ad_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Abajo[0] <= Ab_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Abajo[1] <= Ab_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Abajo[2] <= Ab_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Abajo[3] <= Ab_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Atras[0] <= At_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Atras[1] <= At_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Atras[2] <= At_var.DB_MAX_OUTPUT_PORT_TYPE
+dir_Atras[3] <= At_var.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|uno_o_passthrough:inst76
@@ -1798,6 +1939,13 @@ output_data[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 output_data[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|matriz|F:inst97
+Y[0] <= <VCC>
+Y[1] <= <VCC>
+Y[2] <= <VCC>
+Y[3] <= <VCC>
+
+
 |matriz|uno_o_passthrough:inst75
 in_bits[0] => out_bits.DATAA
 in_bits[1] => out_bits.DATAA
@@ -1900,6 +2048,13 @@ output_data[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 output_data[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|matriz|F:inst98
+Y[0] <= <VCC>
+Y[1] <= <VCC>
+Y[2] <= <VCC>
+Y[3] <= <VCC>
+
+
 |matriz|uno_o_passthrough:inst78
 in_bits[0] => out_bits.DATAA
 in_bits[1] => out_bits.DATAA
@@ -2000,6 +2155,13 @@ output_data[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 output_data[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 output_data[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 output_data[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|matriz|F:inst108
+Y[0] <= <VCC>
+Y[1] <= <VCC>
+Y[2] <= <VCC>
+Y[3] <= <VCC>
 
 
 |matriz|contador_180_grados:inst95
@@ -2129,7 +2291,7 @@ inclk[1] => pll1.CLK1
 locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|matriz|control_motor:inst24
+|matriz|control_motor:inst109
 reset => fstate~3.DATAIN
 clk => fstate~1.DATAIN
 A[0] => Equal0.IN1
@@ -2177,33 +2339,84 @@ H[0] <= H[0].DB_MAX_OUTPUT_PORT_TYPE
 H[1] <= H.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|matriz|Comparador:inst103
-reset => salida.OUTPUTSELECT
-reset => valor_entrada[1].LATCH_ENABLE
-reset => valor_entrada[2].LATCH_ENABLE
-reset => valor_entrada[3].LATCH_ENABLE
-reset => valor_entrada[4].LATCH_ENABLE
-reset => valor_entrada[5].LATCH_ENABLE
-reset => valor_entrada[6].LATCH_ENABLE
-reset => valor_entrada[7].LATCH_ENABLE
-reset => valor_entrada[8].LATCH_ENABLE
-reset => valor_entrada[9].LATCH_ENABLE
-reset => valor_entrada[10].LATCH_ENABLE
-reset => valor_entrada[11].LATCH_ENABLE
-reset => valor_entrada[0].LATCH_ENABLE
-entrada[0] => valor_entrada[0].DATAIN
-entrada[1] => valor_entrada[1].DATAIN
-entrada[2] => valor_entrada[2].DATAIN
-entrada[3] => valor_entrada[3].DATAIN
-entrada[4] => valor_entrada[4].DATAIN
-entrada[5] => valor_entrada[5].DATAIN
-entrada[6] => valor_entrada[6].DATAIN
-entrada[7] => valor_entrada[7].DATAIN
-entrada[8] => valor_entrada[8].DATAIN
-entrada[9] => valor_entrada[9].DATAIN
-entrada[10] => valor_entrada[10].DATAIN
-entrada[11] => valor_entrada[11].DATAIN
-salida <= salida.DB_MAX_OUTPUT_PORT_TYPE
+|matriz|accion:inst22
+Hab_sentido => accion_out[0]~reg0.CLK
+Hab_sentido => accion_out[1]~reg0.CLK
+reset => accion_out[0]~reg0.PRESET
+reset => accion_out[1]~reg0.PRESET
+accion_nw[0] => accion_out[0]~reg0.DATAIN
+accion_nw[1] => accion_out[1]~reg0.DATAIN
+accion_out[0] <= accion_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+accion_out[1] <= accion_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|matriz|genera_accion:inst92
+sentido[0] => Equal0.IN3
+sentido[0] => Equal1.IN3
+sentido[0] => Equal2.IN3
+sentido[0] => Equal3.IN3
+sentido[1] => Equal0.IN2
+sentido[1] => Equal1.IN2
+sentido[1] => Equal2.IN2
+sentido[1] => Equal3.IN2
+sentido_nw[0] => Mux0.IN5
+sentido_nw[0] => Mux1.IN5
+sentido_nw[0] => accion[0].DATAA
+sentido_nw[0] => accion[0].DATAB
+sentido_nw[0] => accion[0].DATAB
+sentido_nw[0] => accion[0].DATAB
+sentido_nw[1] => Mux0.IN4
+sentido_nw[1] => Mux1.IN4
+sentido_nw[1] => accion[1].DATAB
+sentido_nw[1] => accion[1].DATAB
+reset => accion[0]$latch.PRESET
+reset => accion[1]$latch.PRESET
+accion[0] <= accion[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+accion[1] <= accion[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|matriz|contador_90_grados:inst93
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+reset => process_0.IN0
+enable => process_0.IN1
+enable => cnt[0].ENA
+enable => cnt[1].ENA
+enable => cnt[2].ENA
+enable => cnt[3].ENA
+enable => cnt[4].ENA
+enable => cnt[5].ENA
+enable => cnt[6].ENA
+enable => cnt[7].ENA
+enable => cnt[8].ENA
+enable => cnt[9].ENA
+enable => cnt[10].ENA
+enable => cnt[11].ENA
+enable => cnt[12].ENA
+max_reached <= max_reached.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= cnt[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= cnt[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= cnt[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= cnt[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= cnt[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= cnt[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= cnt[11].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|adc:inst88
@@ -2704,83 +2917,32 @@ entrada[11] => valor_entrada[11].DATAIN
 salida <= salida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|matriz|accion:inst22
-Hab_sentido => accion_out[0]~reg0.CLK
-Hab_sentido => accion_out[1]~reg0.CLK
-reset => accion_out[0]~reg0.PRESET
-reset => accion_out[1]~reg0.PRESET
-accion_nw[0] => accion_out[0]~reg0.DATAIN
-accion_nw[1] => accion_out[1]~reg0.DATAIN
-accion_out[0] <= accion_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-accion_out[1] <= accion_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|matriz|genera_accion:inst92
-sentido[0] => Equal0.IN3
-sentido[0] => Equal1.IN3
-sentido[0] => Equal2.IN3
-sentido[0] => Equal3.IN3
-sentido[1] => Equal0.IN2
-sentido[1] => Equal1.IN2
-sentido[1] => Equal2.IN2
-sentido[1] => Equal3.IN2
-sentido_nw[0] => Mux0.IN5
-sentido_nw[0] => Mux1.IN5
-sentido_nw[0] => accion[0].DATAA
-sentido_nw[0] => accion[0].DATAB
-sentido_nw[0] => accion[0].DATAB
-sentido_nw[0] => accion[0].DATAB
-sentido_nw[1] => Mux0.IN4
-sentido_nw[1] => Mux1.IN4
-sentido_nw[1] => accion[1].DATAB
-sentido_nw[1] => accion[1].DATAB
-reset => accion[0]$latch.PRESET
-reset => accion[1]$latch.PRESET
-accion[0] <= accion[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-accion[1] <= accion[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|matriz|contador_90_grados:inst93
-clk => cnt[0].CLK
-clk => cnt[1].CLK
-clk => cnt[2].CLK
-clk => cnt[3].CLK
-clk => cnt[4].CLK
-clk => cnt[5].CLK
-clk => cnt[6].CLK
-clk => cnt[7].CLK
-clk => cnt[8].CLK
-clk => cnt[9].CLK
-clk => cnt[10].CLK
-clk => cnt[11].CLK
-clk => cnt[12].CLK
-reset => process_0.IN0
-enable => process_0.IN1
-enable => cnt[0].ENA
-enable => cnt[1].ENA
-enable => cnt[2].ENA
-enable => cnt[3].ENA
-enable => cnt[4].ENA
-enable => cnt[5].ENA
-enable => cnt[6].ENA
-enable => cnt[7].ENA
-enable => cnt[8].ENA
-enable => cnt[9].ENA
-enable => cnt[10].ENA
-enable => cnt[11].ENA
-enable => cnt[12].ENA
-max_reached <= max_reached.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= cnt[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= cnt[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= cnt[7].DB_MAX_OUTPUT_PORT_TYPE
-q[8] <= cnt[8].DB_MAX_OUTPUT_PORT_TYPE
-q[9] <= cnt[9].DB_MAX_OUTPUT_PORT_TYPE
-q[10] <= cnt[10].DB_MAX_OUTPUT_PORT_TYPE
-q[11] <= cnt[11].DB_MAX_OUTPUT_PORT_TYPE
+|matriz|Comparador:inst103
+reset => salida.OUTPUTSELECT
+reset => valor_entrada[1].LATCH_ENABLE
+reset => valor_entrada[2].LATCH_ENABLE
+reset => valor_entrada[3].LATCH_ENABLE
+reset => valor_entrada[4].LATCH_ENABLE
+reset => valor_entrada[5].LATCH_ENABLE
+reset => valor_entrada[6].LATCH_ENABLE
+reset => valor_entrada[7].LATCH_ENABLE
+reset => valor_entrada[8].LATCH_ENABLE
+reset => valor_entrada[9].LATCH_ENABLE
+reset => valor_entrada[10].LATCH_ENABLE
+reset => valor_entrada[11].LATCH_ENABLE
+reset => valor_entrada[0].LATCH_ENABLE
+entrada[0] => valor_entrada[0].DATAIN
+entrada[1] => valor_entrada[1].DATAIN
+entrada[2] => valor_entrada[2].DATAIN
+entrada[3] => valor_entrada[3].DATAIN
+entrada[4] => valor_entrada[4].DATAIN
+entrada[5] => valor_entrada[5].DATAIN
+entrada[6] => valor_entrada[6].DATAIN
+entrada[7] => valor_entrada[7].DATAIN
+entrada[8] => valor_entrada[8].DATAIN
+entrada[9] => valor_entrada[9].DATAIN
+entrada[10] => valor_entrada[10].DATAIN
+entrada[11] => valor_entrada[11].DATAIN
+salida <= salida.DB_MAX_OUTPUT_PORT_TYPE
 
 

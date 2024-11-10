@@ -13,37 +13,45 @@ end actualiza_muro;
 
 architecture Behavioral of actualiza_muro is
     -- Señales internas
-    signal Ar_i, Ad_i, Ab_i, At_i      : std_logic := '0';
-    signal ena_Ar_i, ena_Ad_i, ena_Ab_i, ena_At_i : std_logic := '0';
+    --signal Ar_i, Ad_i, Ab_i, At_i      : std_logic := '0';
+    --signal ena_Ar_i, ena_Ad_i, ena_Ab_i, ena_At_i : std_logic := '0';
 begin
+
+    Ar <= '1' when sentido = "00" else '0';
+    Ad <= '1' when sentido = "01" else '0';
+    Ab <= '1' when sentido = "10" else '0';
+    At <= '1' when sentido = "11" else '0';
     -- Proceso para controlar las señales internas según el valor de sentido
-    process(sentido)
+    process(sentido,clk)
     begin
 
        if reset = '1' then
-        Ar_i <= '0';
-        Ad_i <= '0';
-        Ab_i <= '0';
-        At_i <= '0';
-        ena_Ar_i <= '0';
-        ena_Ad_i <= '0';
-        ena_Ab_i <= '0';
-        ena_At_i <= '0';
-        else
-        -- Comportamiento basado en el valor de sentido
+        ena_Ar <= '0';
+        ena_Ad <= '0';
+        ena_Ab <= '0';
+        ena_At <= '0';
+        elsif rising_edge(clk) then
         case sentido is
             when "00" =>
-                Ar_i <= '1';
-                ena_Ar_i <= '1';
+                ena_Ar <= '1';
+					 ena_Ad <= '0';
+					 ena_Ab <= '0';
+					 ena_At <= '0';
             when "01" =>
-                Ad_i <= '1';
-                ena_Ad_i <= '1';
+                ena_Ad <= '1';
+					 ena_Ar <= '0';
+					 ena_Ab <= '0';
+					 ena_At <= '0';
             when "10" =>
-                Ab_i <= '1';
-                ena_Ab_i <= '1';
+                ena_Ab <= '1';
+					 ena_Ad <= '0';
+					 ena_Ar <= '0';
+					 ena_At <= '0';
             when "11" =>
-                At_i <= '1';
-                ena_At_i <= '1';
+                ena_At <= '1';
+					 ena_Ad <= '0';
+					 ena_Ab <= '0';
+					 ena_Ar <= '0';
             when others =>
                 -- No hacer nada por defecto, señales ya están inicializadas en '0'
                 null;
@@ -52,29 +60,6 @@ begin
     end process;
 
     -- Proceso sincronizado con el flanco descendente del clk
-    process(reset,clk)
-    begin
-	         if reset = '1' then
-            -- Inicializa todos los flip-flops a '0' cuando reset está activo
-            Ar     <= '0';
-            Ad     <= '0';
-            Ab     <= '0';
-            At     <= '0';
-            ena_Ar <= '0';
-            ena_Ad <= '0';
-            ena_Ab <= '0';
-            ena_At <= '0';
-        elsif rising_edge(clk) then
-            -- Transferir los valores de las señales internas a las salidas
-            Ar     <= Ar_i;
-            Ad     <= Ad_i;
-            Ab     <= Ab_i;
-            At     <= At_i;
-            ena_Ar <= ena_Ar_i;
-            ena_Ad <= ena_Ad_i;
-            ena_Ab <= ena_Ab_i;
-            ena_At <= ena_At_i;
-        end if;
-    end process;
+
 
 end Behavioral;
