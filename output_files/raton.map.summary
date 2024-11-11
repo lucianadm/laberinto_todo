@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Sun Nov 10 15:03:24 2024
-Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Analysis & Synthesis Status : Successful - Mon Nov 11 19:04:18 2024
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : raton
 Top-level Entity Name : matriz
 Family : Cyclone IV E
-Total logic elements : 1,388
-    Total combinational functions : 1,350
-    Dedicated logic registers : 261
-Total registers : 261
-Total pins : 138
+Total logic elements : 2,593
+    Total combinational functions : 1,985
+    Dedicated logic registers : 1,224
+Total registers : 1224
+Total pins : 137
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 172,032
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 1

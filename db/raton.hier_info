@@ -69,26 +69,25 @@ dir_Atras[1] <= genera_direcciones:inst99.dir_Atras[1]
 dir_Atras[2] <= genera_direcciones:inst99.dir_Atras[2]
 dir_Atras[3] <= genera_direcciones:inst99.dir_Atras[3]
 fin <= inst80.DB_MAX_OUTPUT_PORT_TYPE
-H[0] <= control_motor:inst109.H[0]
-H[1] <= control_motor:inst109.H[1]
-c2 <= pll:inst81.c2
-D => control_motor:inst109.D
-I => control_motor:inst109.I
+H[0] <= control_motor:inst89.H[0]
+H[1] <= control_motor:inst89.H[1]
+velD <= pll:inst81.c1
+ADC_DOUT => adc:inst88.ADC_DOUT
 quieto <= compara_vecinos:inst15.quieto
 Hab_accion <= control:inst25.Hab_accion
 locked <= pll:inst81.locked
-velD <= pll:inst81.c1
 velI <= pll:inst81.c1
 ADC_SCLK <= adc:inst88.ADC_SCLK
-ADC_DOUT => adc:inst88.ADC_DOUT
 ADC_CS_N <= adc:inst88.ADC_CS_N
 ADC_DIN <= adc:inst88.ADC_DIN
-Izq_cerca <= Comparador:inst102.salida
-Der_cerca <= Comparador:inst103.salida
+Izq_cerca <= ComparadorI:inst100.salida
+Der_cerca <= ComparadorD:inst101.salida
+c2 <= pll:inst81.c2
 m_Ar <= muros_actual:inst23.m_Ar
 m_Ad <= muros_actual:inst23.m_Ad
 m_Ab <= muros_actual:inst23.m_Ab
 m_At <= muros_actual:inst23.m_At
+OUT <= inst96.DB_MAX_OUTPUT_PORT_TYPE
 Ab[0] <= uno_o_passthrough:inst77.out_bits[0]
 Ab[1] <= uno_o_passthrough:inst77.out_bits[1]
 Ab[2] <= uno_o_passthrough:inst77.out_bits[2]
@@ -147,10 +146,10 @@ CH1[8] <= adc:inst88.CH1[8]
 CH1[9] <= adc:inst88.CH1[9]
 CH1[10] <= adc:inst88.CH1[10]
 CH1[11] <= adc:inst88.CH1[11]
-MD[0] <= control_motor:inst109.MD[0]
-MD[1] <= control_motor:inst109.MD[1]
-MI[0] <= control_motor:inst109.MI[0]
-MI[1] <= control_motor:inst109.MI[1]
+MD[0] <= control_motor:inst89.MD[0]
+MD[1] <= control_motor:inst89.MD[1]
+MI[0] <= control_motor:inst89.MI[0]
+MI[1] <= control_motor:inst89.MI[1]
 sentido_nw[0] <= compara_vecinos:inst15.sentido_nw[0]
 sentido_nw[1] <= compara_vecinos:inst15.sentido_nw[1]
 
@@ -2291,7 +2290,7 @@ inclk[1] => pll1.CLK1
 locked <= locked.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|matriz|control_motor:inst109
+|matriz|control_motor:inst89
 reset => fstate~3.DATAIN
 clk => fstate~1.DATAIN
 A[0] => Equal0.IN1
@@ -2331,92 +2330,41 @@ Llego => process_1.IN1
 Llego => process_1.IN1
 Llego => process_1.IN1
 Llego => process_1.IN1
-MD[0] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
-MD[1] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
-MI[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+MD[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+MD[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+MI[0] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
 MI[1] <= MI.DB_MAX_OUTPUT_PORT_TYPE
 H[0] <= H[0].DB_MAX_OUTPUT_PORT_TYPE
 H[1] <= H.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|matriz|accion:inst22
-Hab_sentido => accion_out[0]~reg0.CLK
-Hab_sentido => accion_out[1]~reg0.CLK
-reset => accion_out[0]~reg0.PRESET
-reset => accion_out[1]~reg0.PRESET
-accion_nw[0] => accion_out[0]~reg0.DATAIN
-accion_nw[1] => accion_out[1]~reg0.DATAIN
-accion_out[0] <= accion_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-accion_out[1] <= accion_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|matriz|genera_accion:inst92
-sentido[0] => Equal0.IN3
-sentido[0] => Equal1.IN3
-sentido[0] => Equal2.IN3
-sentido[0] => Equal3.IN3
-sentido[1] => Equal0.IN2
-sentido[1] => Equal1.IN2
-sentido[1] => Equal2.IN2
-sentido[1] => Equal3.IN2
-sentido_nw[0] => Mux0.IN5
-sentido_nw[0] => Mux1.IN5
-sentido_nw[0] => accion[0].DATAA
-sentido_nw[0] => accion[0].DATAB
-sentido_nw[0] => accion[0].DATAB
-sentido_nw[0] => accion[0].DATAB
-sentido_nw[1] => Mux0.IN4
-sentido_nw[1] => Mux1.IN4
-sentido_nw[1] => accion[1].DATAB
-sentido_nw[1] => accion[1].DATAB
-reset => accion[0]$latch.PRESET
-reset => accion[1]$latch.PRESET
-accion[0] <= accion[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-accion[1] <= accion[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|matriz|contador_90_grados:inst93
-clk => cnt[0].CLK
-clk => cnt[1].CLK
-clk => cnt[2].CLK
-clk => cnt[3].CLK
-clk => cnt[4].CLK
-clk => cnt[5].CLK
-clk => cnt[6].CLK
-clk => cnt[7].CLK
-clk => cnt[8].CLK
-clk => cnt[9].CLK
-clk => cnt[10].CLK
-clk => cnt[11].CLK
-clk => cnt[12].CLK
-reset => process_0.IN0
-enable => process_0.IN1
-enable => cnt[0].ENA
-enable => cnt[1].ENA
-enable => cnt[2].ENA
-enable => cnt[3].ENA
-enable => cnt[4].ENA
-enable => cnt[5].ENA
-enable => cnt[6].ENA
-enable => cnt[7].ENA
-enable => cnt[8].ENA
-enable => cnt[9].ENA
-enable => cnt[10].ENA
-enable => cnt[11].ENA
-enable => cnt[12].ENA
-max_reached <= max_reached.DB_MAX_OUTPUT_PORT_TYPE
-q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= cnt[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= cnt[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= cnt[7].DB_MAX_OUTPUT_PORT_TYPE
-q[8] <= cnt[8].DB_MAX_OUTPUT_PORT_TYPE
-q[9] <= cnt[9].DB_MAX_OUTPUT_PORT_TYPE
-q[10] <= cnt[10].DB_MAX_OUTPUT_PORT_TYPE
-q[11] <= cnt[11].DB_MAX_OUTPUT_PORT_TYPE
+|matriz|ComparadorD:inst101
+reset => salida.OUTPUTSELECT
+reset => valor_entrada[1].LATCH_ENABLE
+reset => valor_entrada[2].LATCH_ENABLE
+reset => valor_entrada[3].LATCH_ENABLE
+reset => valor_entrada[4].LATCH_ENABLE
+reset => valor_entrada[5].LATCH_ENABLE
+reset => valor_entrada[6].LATCH_ENABLE
+reset => valor_entrada[7].LATCH_ENABLE
+reset => valor_entrada[8].LATCH_ENABLE
+reset => valor_entrada[9].LATCH_ENABLE
+reset => valor_entrada[10].LATCH_ENABLE
+reset => valor_entrada[11].LATCH_ENABLE
+reset => valor_entrada[0].LATCH_ENABLE
+entrada[0] => valor_entrada[0].DATAIN
+entrada[1] => valor_entrada[1].DATAIN
+entrada[2] => valor_entrada[2].DATAIN
+entrada[3] => valor_entrada[3].DATAIN
+entrada[4] => valor_entrada[4].DATAIN
+entrada[5] => valor_entrada[5].DATAIN
+entrada[6] => valor_entrada[6].DATAIN
+entrada[7] => valor_entrada[7].DATAIN
+entrada[8] => valor_entrada[8].DATAIN
+entrada[9] => valor_entrada[9].DATAIN
+entrada[10] => valor_entrada[10].DATAIN
+entrada[11] => valor_entrada[11].DATAIN
+salida <= salida.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |matriz|adc:inst88
@@ -2888,7 +2836,7 @@ reading7[10] <= reading7[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 reading7[11] <= reading7[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|matriz|Comparador:inst102
+|matriz|ComparadorI:inst100
 reset => salida.OUTPUTSELECT
 reset => valor_entrada[1].LATCH_ENABLE
 reset => valor_entrada[2].LATCH_ENABLE
@@ -2917,32 +2865,83 @@ entrada[11] => valor_entrada[11].DATAIN
 salida <= salida.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|matriz|Comparador:inst103
-reset => salida.OUTPUTSELECT
-reset => valor_entrada[1].LATCH_ENABLE
-reset => valor_entrada[2].LATCH_ENABLE
-reset => valor_entrada[3].LATCH_ENABLE
-reset => valor_entrada[4].LATCH_ENABLE
-reset => valor_entrada[5].LATCH_ENABLE
-reset => valor_entrada[6].LATCH_ENABLE
-reset => valor_entrada[7].LATCH_ENABLE
-reset => valor_entrada[8].LATCH_ENABLE
-reset => valor_entrada[9].LATCH_ENABLE
-reset => valor_entrada[10].LATCH_ENABLE
-reset => valor_entrada[11].LATCH_ENABLE
-reset => valor_entrada[0].LATCH_ENABLE
-entrada[0] => valor_entrada[0].DATAIN
-entrada[1] => valor_entrada[1].DATAIN
-entrada[2] => valor_entrada[2].DATAIN
-entrada[3] => valor_entrada[3].DATAIN
-entrada[4] => valor_entrada[4].DATAIN
-entrada[5] => valor_entrada[5].DATAIN
-entrada[6] => valor_entrada[6].DATAIN
-entrada[7] => valor_entrada[7].DATAIN
-entrada[8] => valor_entrada[8].DATAIN
-entrada[9] => valor_entrada[9].DATAIN
-entrada[10] => valor_entrada[10].DATAIN
-entrada[11] => valor_entrada[11].DATAIN
-salida <= salida.DB_MAX_OUTPUT_PORT_TYPE
+|matriz|accion:inst22
+Hab_sentido => accion_out[0]~reg0.CLK
+Hab_sentido => accion_out[1]~reg0.CLK
+reset => accion_out[0]~reg0.PRESET
+reset => accion_out[1]~reg0.PRESET
+accion_nw[0] => accion_out[0]~reg0.DATAIN
+accion_nw[1] => accion_out[1]~reg0.DATAIN
+accion_out[0] <= accion_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+accion_out[1] <= accion_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|matriz|genera_accion:inst92
+sentido[0] => Equal0.IN3
+sentido[0] => Equal1.IN3
+sentido[0] => Equal2.IN3
+sentido[0] => Equal3.IN3
+sentido[1] => Equal0.IN2
+sentido[1] => Equal1.IN2
+sentido[1] => Equal2.IN2
+sentido[1] => Equal3.IN2
+sentido_nw[0] => Mux0.IN5
+sentido_nw[0] => Mux1.IN5
+sentido_nw[0] => accion[0].DATAA
+sentido_nw[0] => accion[0].DATAB
+sentido_nw[0] => accion[0].DATAB
+sentido_nw[0] => accion[0].DATAB
+sentido_nw[1] => Mux0.IN4
+sentido_nw[1] => Mux1.IN4
+sentido_nw[1] => accion[1].DATAB
+sentido_nw[1] => accion[1].DATAB
+reset => accion[0]$latch.PRESET
+reset => accion[1]$latch.PRESET
+accion[0] <= accion[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+accion[1] <= accion[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|matriz|contador_90_grados:inst93
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+reset => process_0.IN0
+enable => process_0.IN1
+enable => cnt[0].ENA
+enable => cnt[1].ENA
+enable => cnt[2].ENA
+enable => cnt[3].ENA
+enable => cnt[4].ENA
+enable => cnt[5].ENA
+enable => cnt[6].ENA
+enable => cnt[7].ENA
+enable => cnt[8].ENA
+enable => cnt[9].ENA
+enable => cnt[10].ENA
+enable => cnt[11].ENA
+enable => cnt[12].ENA
+max_reached <= max_reached.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= cnt[4].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= cnt[5].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= cnt[6].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= cnt[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= cnt[8].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= cnt[9].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= cnt[10].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= cnt[11].DB_MAX_OUTPUT_PORT_TYPE
 
 
