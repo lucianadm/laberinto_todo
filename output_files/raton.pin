@@ -63,112 +63,112 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 CHIP  "raton"  ASSIGNED TO AN: EP4CE22F17C6
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
-Adelante[3]                  : A2        : output : 2.5 V             :         : 8         : N              
-dir_Abajo[0]                 : A3        : output : 2.5 V             :         : 8         : N              
-C11[0]                       : A4        : output : 2.5 V             :         : 8         : N              
-C10[2]                       : A5        : output : 2.5 V             :         : 8         : N              
-D_Abajo                      : A6        : output : 2.5 V             :         : 8         : N              
-C11[3]                       : A7        : output : 2.5 V             :         : 8         : N              
+Ar[2]                        : A2        : output : 2.5 V             :         : 8         : N              
+dir_Atras[2]                 : A3        : output : 2.5 V             :         : 8         : N              
+Abajo[1]                     : A4        : output : 2.5 V             :         : 8         : N              
+CH0[7]                       : A5        : output : 2.5 V             :         : 8         : N              
+dir_Abajo[3]                 : A6        : output : 2.5 V             :         : 8         : N              
+m_Ad                         : A7        : output : 2.5 V             :         : 8         : N              
 Muro                         : A8        : input  : 2.5 V             :         : 8         : Y              
 ADC_DOUT                     : A9        : input  : 2.5 V             :         : 7         : Y              
 ADC_CS_N                     : A10       : output : 2.5 V             :         : 7         : Y              
 actual[3]                    : A11       : output : 2.5 V             :         : 7         : Y              
-Hab_Actual                   : A12       : output : 2.5 V             :         : 7         : N              
+C10[0]                       : A12       : output : 2.5 V             :         : 7         : N              
 actual[1]                    : A13       : output : 2.5 V             :         : 7         : Y              
-sentido_nw[0]                : A14       : output : 2.5 V             :         : 7         : N              
+CH0[3]                       : A14       : output : 2.5 V             :         : 7         : N              
 actual[0]                    : A15       : output : 2.5 V             :         : 7         : Y              
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
 sentido[1]                   : B1        : output : 2.5 V             :         : 1         : Y              
 GND                          : B2        : gnd    :                   :         :           :                
-Arriba[1]                    : B3        : output : 2.5 V             :         : 8         : N              
-dir_Atras[0]                 : B4        : output : 2.5 V             :         : 8         : N              
-C10[0]                       : B5        : output : 2.5 V             :         : 8         : N              
-C12[3]                       : B6        : output : 2.5 V             :         : 8         : N              
-D_Arriba                     : B7        : output : 2.5 V             :         : 8         : N              
+ena_Ab                       : B3        : output : 2.5 V             :         : 8         : N              
+fin                          : B4        : output : 2.5 V             :         : 8         : N              
+CH0[6]                       : B5        : output : 2.5 V             :         : 8         : N              
+Arriba[1]                    : B6        : output : 2.5 V             :         : 8         : N              
+m_Ab                         : B7        : output : 2.5 V             :         : 8         : N              
 Linea                        : B8        : input  : 2.5 V             :         : 8         : Y              
 GND+                         : B9        :        :                   :         : 7         :                
 ADC_DIN                      : B10       : output : 2.5 V             :         : 7         : Y              
-accion_out[1]                : B11       : output : 2.5 V             :         : 7         : N              
-Hab_sentido                  : B12       : output : 2.5 V             :         : 7         : N              
+dir_Adelante[1]              : B11       : output : 2.5 V             :         : 7         : N              
+H[0]                         : B12       : output : 2.5 V             :         : 7         : N              
 actual[2]                    : B13       : output : 2.5 V             :         : 7         : Y              
 ADC_SCLK                     : B14       : output : 2.5 V             :         : 7         : Y              
 GND                          : B15       : gnd    :                   :         :           :                
-CH0[10]                      : B16       : output : 2.5 V             :         : 6         : N              
+CH1[4]                       : B16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
-Hab_muro                     : C2        : output : 2.5 V             :         : 1         : N              
-dir_Arriba[3]                : C3        : output : 2.5 V             :         : 8         : N              
+Atras[3]                     : C2        : output : 2.5 V             :         : 1         : N              
+Abajo[0]                     : C3        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
-ena_Ar                       : C6        : output : 2.5 V             :         : 8         : N              
+dir_Adelante[2]              : C6        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
-CH1[8]                       : C8        : output : 2.5 V             :         : 8         : N              
-Ab[0]                        : C9        : output : 2.5 V             :         : 7         : N              
+dir_Atras[0]                 : C8        : output : 2.5 V             :         : 8         : N              
+Adelante[2]                  : C9        : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
-H[0]                         : C11       : output : 2.5 V             :         : 7         : N              
+dir_Abajo[1]                 : C11       : output : 2.5 V             :         : 7         : N              
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 7         :                
-CH0[0]                       : C15       : output : 2.5 V             :         : 6         : N              
-Ar[2]                        : C16       : output : 2.5 V             :         : 6         : N              
+CH0[1]                       : C14       : output : 2.5 V             :         : 7         : N              
+CH1[3]                       : C15       : output : 2.5 V             :         : 6         : N              
+CH0[11]                      : C16       : output : 2.5 V             :         : 6         : N              
 Der_cerca                    : D1        : output : 2.5 V             :         : 1         : Y              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
-dir_Abajo[3]                 : D3        : output : 2.5 V             :         : 8         : N              
+CH0[8]                       : D3        : output : 2.5 V             :         : 8         : N              
 VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
-Hab_accion                   : D5        : output : 2.5 V             :         : 8         : N              
-ena_Ab                       : D6        : output : 2.5 V             :         : 8         : N              
+Ab[3]                        : D5        : output : 2.5 V             :         : 8         : N              
+dir_Arriba[2]                : D6        : output : 2.5 V             :         : 8         : N              
 GND                          : D7        : gnd    :                   :         :           :                
-C11[1]                       : D8        : output : 2.5 V             :         : 8         : N              
-sentido_nw[1]                : D9        : output : 2.5 V             :         : 7         : N              
+CH1[2]                       : D8        : output : 2.5 V             :         : 8         : N              
+Arriba[2]                    : D9        : output : 2.5 V             :         : 7         : N              
 GND                          : D10       : gnd    :                   :         :           :                
-dir_Abajo[2]                 : D11       : output : 2.5 V             :         : 7         : N              
-dir_Arriba[2]                : D12       : output : 2.5 V             :         : 7         : N              
+CH1[1]                       : D11       : output : 2.5 V             :         : 7         : N              
+CH0[9]                       : D12       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
-Abajo[3]                     : D14       : output : 2.5 V             :         : 7         : N              
-m_Ab                         : D15       : output : 2.5 V             :         : 6         : N              
-fin                          : D16       : output : 2.5 V             :         : 6         : N              
+CH0[10]                      : D14       : output : 2.5 V             :         : 7         : N              
+CH1[8]                       : D15       : output : 2.5 V             :         : 6         : N              
+CH1[6]                       : D16       : output : 2.5 V             :         : 6         : N              
 GND+                         : E1        :        :                   :         : 1         :                
 GND                          : E2        : gnd    :                   :         :           :                
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                
 GNDA3                        : E5        : gnd    :                   :         :           :                
-C12[2]                       : E6        : output : 2.5 V             :         : 8         : N              
-C10[1]                       : E7        : output : 2.5 V             :         : 8         : N              
-D_Atras                      : E8        : output : 2.5 V             :         : 8         : N              
-C11[2]                       : E9        : output : 2.5 V             :         : 7         : N              
-accion_out[0]                : E10       : output : 2.5 V             :         : 7         : N              
-dir_Abajo[1]                 : E11       : output : 2.5 V             :         : 7         : N              
+dir_Abajo[2]                 : E6        : output : 2.5 V             :         : 8         : N              
+dir_Arriba[3]                : E7        : output : 2.5 V             :         : 8         : N              
+dir_Abajo[0]                 : E8        : output : 2.5 V             :         : 8         : N              
+Ad[1]                        : E9        : output : 2.5 V             :         : 7         : N              
+CH0[0]                       : E10       : output : 2.5 V             :         : 7         : N              
+CH0[4]                       : E11       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
 VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
 GND+                         : E15       :        :                   :         : 6         :                
 GND+                         : E16       :        :                   :         : 6         :                
-CH1[6]                       : F1        : output : 2.5 V             :         : 1         : N              
-C10[3]                       : F2        : output : 2.5 V             :         : 1         : N              
+At[0]                        : F1        : output : 2.5 V             :         : 1         : N              
+Ar[3]                        : F2        : output : 2.5 V             :         : 1         : N              
 sentido[0]                   : F3        : output : 2.5 V             :         : 1         : Y              
 nSTATUS                      : F4        :        :                   :         : 1         :                
 VCCA3                        : F5        : power  :                   : 2.5V    :           :                
 GND                          : F6        : gnd    :                   :         :           :                
 VCCINT                       : F7        : power  :                   : 1.2V    :           :                
-D_Adelante                   : F8        : output : 2.5 V             :         : 8         : N              
-OUT                          : F9        : output : 2.5 V             :         : 7         : N              
+CH1[9]                       : F8        : output : 2.5 V             :         : 8         : N              
+dir_Adelante[0]              : F9        : output : 2.5 V             :         : 7         : N              
 GND                          : F10       : gnd    :                   :         :           :                
 VCCINT                       : F11       : power  :                   : 1.2V    :           :                
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
 MD[1]                        : F13       : output : 2.5 V             :         : 6         : Y              
-CH0[11]                      : F14       : output : 2.5 V             :         : 6         : N              
-m_Ar                         : F15       : output : 2.5 V             :         : 6         : N              
+Hab_accion                   : F14       : output : 2.5 V             :         : 6         : N              
+Hab_sentido                  : F15       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
-C12[0]                       : G1        : output : 2.5 V             :         : 1         : N              
-dir_Adelante[1]              : G2        : output : 2.5 V             :         : 1         : N              
+sentido_nw[0]                : G1        : output : 2.5 V             :         : 1         : N              
+Ar[0]                        : G2        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
 GND                          : G4        : gnd    :                   :         :           :                
-Arriba[2]                    : G5        : output : 2.5 V             :         : 1         : N              
+accion_out[0]                : G5        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : G6        : power  :                   : 1.2V    :           :                
 VCCINT                       : G7        : power  :                   : 1.2V    :           :                
 VCCINT                       : G8        : power  :                   : 1.2V    :           :                
@@ -178,12 +178,12 @@ GND                          : G11       : gnd    :                   :         
 MSEL2                        : G12       :        :                   :         : 6         :                
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
-CH0[9]                       : G15       : output : 2.5 V             :         : 6         : N              
-dir_Arriba[0]                : G16       : output : 2.5 V             :         : 6         : N              
+Hab_Actual                   : G15       : output : 2.5 V             :         : 6         : N              
+C13[2]                       : G16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
-altera_reserved_tck          : H3        : input  : 2.5 V             :         : 1         : N              
-altera_reserved_tdi          : H4        : input  : 2.5 V             :         : 1         : N              
+TCK                          : H3        : input  :                   :         : 1         :                
+TDI                          : H4        : input  :                   :         : 1         :                
 nCONFIG                      : H5        :        :                   :         : 1         :                
 VCCINT                       : H6        : power  :                   : 1.2V    :           :                
 GND                          : H7        : gnd    :                   :         :           :                
@@ -196,11 +196,11 @@ MSEL0                        : H13       :        :                   :         
 CONF_DONE                    : H14       :        :                   :         : 6         :                
 GND                          : H15       : gnd    :                   :         :           :                
 GND                          : H16       : gnd    :                   :         :           :                
-C13[1]                       : J1        : output : 2.5 V             :         : 2         : N              
-C13[3]                       : J2        : output : 2.5 V             :         : 2         : N              
+Ar[1]                        : J1        : output : 2.5 V             :         : 2         : N              
+C12[1]                       : J2        : output : 2.5 V             :         : 2         : N              
 nCE                          : J3        :        :                   :         : 1         :                
-altera_reserved_tdo          : J4        : output : 2.5 V             :         : 1         : N              
-altera_reserved_tms          : J5        : input  : 2.5 V             :         : 1         : N              
+TDO                          : J4        : output :                   :         : 1         :                
+TMS                          : J5        : input  :                   :         : 1         :                
 VCCINT                       : J6        : power  :                   : 1.2V    :           :                
 GND                          : J7        : gnd    :                   :         :           :                
 GND                          : J8        : gnd    :                   :         :           :                
@@ -208,15 +208,15 @@ GND                          : J9        : gnd    :                   :         
 GND                          : J10       : gnd    :                   :         :           :                
 GND                          : J11       : gnd    :                   :         :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
-Ad[2]                        : J13       : output : 2.5 V             :         : 5         : N              
-Atras[2]                     : J14       : output : 2.5 V             :         : 5         : N              
+Ad[3]                        : J13       : output : 2.5 V             :         : 5         : N              
+C13[3]                       : J14       : output : 2.5 V             :         : 5         : N              
 El_reset                     : J15       : input  : 2.5 V             :         : 5         : Y              
-m_At                         : J16       : output : 2.5 V             :         : 5         : N              
-dir_Atras[3]                 : K1        : output : 2.5 V             :         : 2         : N              
-CH1[7]                       : K2        : output : 2.5 V             :         : 2         : N              
+C13[1]                       : J16       : output : 2.5 V             :         : 5         : N              
+sentido_nw[1]                : K1        : output : 2.5 V             :         : 2         : N              
+Ad[0]                        : K2        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
 GND                          : K4        : gnd    :                   :         :           :                
-CH1[2]                       : K5        : output : 2.5 V             :         : 2         : N              
+CH1[11]                      : K5        : output : 2.5 V             :         : 2         : N              
 GND                          : K6        : gnd    :                   :         :           :                
 VCCINT                       : K7        : power  :                   : 1.2V    :           :                
 GND                          : K8        : gnd    :                   :         :           :                
@@ -226,99 +226,99 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-At[2]                        : K15       : output : 2.5 V             :         : 5         : N              
-At[3]                        : K16       : output : 2.5 V             :         : 5         : N              
-CH1[1]                       : L1        : output : 2.5 V             :         : 2         : N              
-CH1[9]                       : L2        : output : 2.5 V             :         : 2         : N              
+m_At                         : K15       : output : 2.5 V             :         : 5         : N              
+Atras[0]                     : K16       : output : 2.5 V             :         : 5         : N              
+Adelante[0]                  : L1        : output : 2.5 V             :         : 2         : N              
+At[1]                        : L2        : output : 2.5 V             :         : 2         : N              
 Izq_cerca                    : L3        : output : 2.5 V             :         : 2         : Y              
-CH0[1]                       : L4        : output : 2.5 V             :         : 2         : N              
+CH1[7]                       : L4        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 VCCINT                       : L6        : power  :                   : 1.2V    :           :                
-C12[1]                       : L7        : output : 2.5 V             :         : 3         : N              
-ena_Ad                       : L8        : output : 2.5 V             :         : 3         : N              
+dir_Adelante[3]              : L7        : output : 2.5 V             :         : 3         : N              
+C12[0]                       : L8        : output : 2.5 V             :         : 3         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 VCCA4                        : L12       : power  :                   : 2.5V    :           :                
-CH0[6]                       : L13       : output : 2.5 V             :         : 5         : N              
-Atras[0]                     : L14       : output : 2.5 V             :         : 5         : N              
-Ab[2]                        : L15       : output : 2.5 V             :         : 5         : N              
-CH1[11]                      : L16       : output : 2.5 V             :         : 5         : N              
+m_Ar                         : L13       : output : 2.5 V             :         : 5         : N              
+C10[2]                       : L14       : output : 2.5 V             :         : 5         : N              
+dir_Atras[1]                 : L15       : output : 2.5 V             :         : 5         : N              
+Ad[2]                        : L16       : output : 2.5 V             :         : 5         : N              
 GND+                         : M1        :        :                   :         : 2         :                
 GND+                         : M2        :        :                   :         : 2         :                
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GNDA1                        : M5        : gnd    :                   :         :           :                
-m_Ad                         : M6        : output : 2.5 V             :         : 3         : N              
-ena_At                       : M7        : output : 2.5 V             :         : 3         : N              
-dir_Atras[1]                 : M8        : output : 2.5 V             :         : 3         : N              
+Atras[1]                     : M6        : output : 2.5 V             :         : 3         : N              
+dir_Atras[3]                 : M7        : output : 2.5 V             :         : 3         : N              
+C12[3]                       : M8        : output : 2.5 V             :         : 3         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
-H[1]                         : M10       : output : 2.5 V             :         : 4         : N              
+dir_Arriba[0]                : M10       : output : 2.5 V             :         : 4         : N              
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
 GNDA4                        : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
 VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
 GND+                         : M15       :        :                   :         : 5         :                
 GND+                         : M16       :        :                   :         : 5         :                
-Ar[1]                        : N1        : output : 2.5 V             :         : 2         : N              
-dir_Atras[2]                 : N2        : output : 2.5 V             :         : 2         : N              
-Atras[1]                     : N3        : output : 2.5 V             :         : 3         : N              
+C11[0]                       : N1        : output : 2.5 V             :         : 2         : N              
+CH0[5]                       : N2        : output : 2.5 V             :         : 2         : N              
+Ab[0]                        : N3        : output : 2.5 V             :         : 3         : N              
 VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
-Arriba[0]                    : N5        : output : 2.5 V             :         : 3         : N              
-dir_Adelante[2]              : N6        : output : 2.5 V             :         : 3         : N              
+Abajo[2]                     : N5        : output : 2.5 V             :         : 3         : N              
+Arriba[3]                    : N6        : output : 2.5 V             :         : 3         : N              
 GND                          : N7        : gnd    :                   :         :           :                
-dir_Arriba[1]                : N8        : output : 2.5 V             :         : 3         : N              
-CH1[10]                      : N9        : output : 2.5 V             :         : 4         : N              
+OUT                          : N8        : output : 2.5 V             :         : 3         : N              
+D_Arriba                     : N9        : output : 2.5 V             :         : 4         : N              
 GND                          : N10       : gnd    :                   :         :           :                
-CH0[7]                       : N11       : output : 2.5 V             :         : 4         : N              
-Arriba[3]                    : N12       : output : 2.5 V             :         : 4         : N              
+C13[0]                       : N11       : output : 2.5 V             :         : 4         : N              
+C11[2]                       : N12       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
-Ad[0]                        : N14       : output : 2.5 V             :         : 5         : N              
-Atras[3]                     : N15       : output : 2.5 V             :         : 5         : N              
-Ar[0]                        : N16       : output : 2.5 V             :         : 5         : N              
-Abajo[2]                     : P1        : output : 2.5 V             :         : 2         : N              
-Ad[3]                        : P2        : output : 2.5 V             :         : 2         : N              
-Adelante[1]                  : P3        : output : 2.5 V             :         : 3         : N              
+C11[3]                       : N14       : output : 2.5 V             :         : 5         : N              
+C10[3]                       : N15       : output : 2.5 V             :         : 5         : N              
+ena_Ar                       : N16       : output : 2.5 V             :         : 5         : N              
+CH1[10]                      : P1        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   :         : 2         :                
+Atras[2]                     : P3        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
 GND                          : P5        : gnd    :                   :         :           :                
-dir_Adelante[3]              : P6        : output : 2.5 V             :         : 3         : N              
+Arriba[0]                    : P6        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
-dir_Adelante[0]              : P8        : output : 2.5 V             :         : 3         : N              
-quieto                       : P9        : output : 2.5 V             :         : 4         : N              
+Hab_muro                     : P8        : output : 2.5 V             :         : 3         : N              
+D_Atras                      : P9        : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
-CH0[3]                       : P11       : output : 2.5 V             :         : 4         : N              
+accion_out[1]                : P11       : output : 2.5 V             :         : 4         : N              
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
 c2                           : P14       : output : 2.5 V             :         : 4         : N              
-Ab[1]                        : P15       : output : 2.5 V             :         : 5         : N              
-Ar[3]                        : P16       : output : 2.5 V             :         : 5         : N              
-Ad[1]                        : R1        : output : 2.5 V             :         : 2         : N              
+CH1[0]                       : P15       : output : 2.5 V             :         : 5         : N              
+ena_Ad                       : P16       : output : 2.5 V             :         : 5         : N              
+Adelante[3]                  : R1        : output : 2.5 V             :         : 2         : N              
 GND                          : R2        : gnd    :                   :         :           :                
-Abajo[0]                     : R3        : output : 2.5 V             :         : 3         : N              
-Adelante[0]                  : R4        : output : 2.5 V             :         : 3         : N              
-CH1[4]                       : R5        : output : 2.5 V             :         : 3         : N              
-C13[0]                       : R6        : output : 2.5 V             :         : 3         : N              
-C13[2]                       : R7        : output : 2.5 V             :         : 3         : N              
+Adelante[1]                  : R3        : output : 2.5 V             :         : 3         : N              
+Abajo[3]                     : R4        : output : 2.5 V             :         : 3         : N              
+At[3]                        : R5        : output : 2.5 V             :         : 3         : N              
+Ab[1]                        : R6        : output : 2.5 V             :         : 3         : N              
+quieto                       : R7        : output : 2.5 V             :         : 3         : N              
 clk                          : R8        : input  : 2.5 V             :         : 3         : Y              
 GND+                         : R9        :        :                   :         : 4         :                
-CH1[0]                       : R10       : output : 2.5 V             :         : 4         : N              
-Abajo[1]                     : R11       : output : 2.5 V             :         : 4         : N              
-CH0[8]                       : R12       : output : 2.5 V             :         : 4         : N              
+C12[2]                       : R10       : output : 2.5 V             :         : 4         : N              
+D_Adelante                   : R11       : output : 2.5 V             :         : 4         : N              
+Ab[2]                        : R12       : output : 2.5 V             :         : 4         : N              
 velI                         : R13       : output : 2.5 V             :         : 4         : Y              
-locked                       : R14       : output : 2.5 V             :         : 4         : N              
+CH1[5]                       : R14       : output : 2.5 V             :         : 4         : N              
 GND                          : R15       : gnd    :                   :         :           :                
-At[1]                        : R16       : output : 2.5 V             :         : 5         : N              
+D_Abajo                      : R16       : output : 2.5 V             :         : 5         : N              
 VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
-CH0[5]                       : T2        : output : 2.5 V             :         : 3         : N              
-At[0]                        : T3        : output : 2.5 V             :         : 3         : N              
-Adelante[2]                  : T4        : output : 2.5 V             :         : 3         : N              
-CH1[3]                       : T5        : output : 2.5 V             :         : 3         : N              
-CH1[5]                       : T6        : output : 2.5 V             :         : 3         : N              
-CH0[4]                       : T7        : output : 2.5 V             :         : 3         : N              
+locked                       : T2        : output : 2.5 V             :         : 3         : N              
+H[1]                         : T3        : output : 2.5 V             :         : 3         : N              
+ena_At                       : T4        : output : 2.5 V             :         : 3         : N              
+C11[1]                       : T5        : output : 2.5 V             :         : 3         : N              
+At[2]                        : T6        : output : 2.5 V             :         : 3         : N              
+CH0[2]                       : T7        : output : 2.5 V             :         : 3         : N              
 GND+                         : T8        :        :                   :         : 3         :                
 GND+                         : T9        :        :                   :         : 4         :                
-CH0[2]                       : T10       : output : 2.5 V             :         : 4         : N              
-Ab[3]                        : T11       : output : 2.5 V             :         : 4         : N              
+C10[1]                       : T10       : output : 2.5 V             :         : 4         : N              
+dir_Arriba[1]                : T11       : output : 2.5 V             :         : 4         : N              
 velD                         : T12       : output : 2.5 V             :         : 4         : Y              
 MI[0]                        : T13       : output : 2.5 V             :         : 4         : Y              
 MI[1]                        : T14       : output : 2.5 V             :         : 4         : Y              

@@ -2,64 +2,580 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
-Slack : 42.659
+Type  : Slow 1200mV 85C Model Setup 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -7.870
+TNS   : -52.310
+
+Type  : Slow 1200mV 85C Model Setup 'control:inst25|fstate.Decide_Accion'
+Slack : -7.607
+TNS   : -15.211
+
+Type  : Slow 1200mV 85C Model Setup 'control:inst25|fstate.Actual_sent'
+Slack : -6.364
+TNS   : -12.374
+
+Type  : Slow 1200mV 85C Model Setup 'actualiza_actual:inst90|actual[0]'
+Slack : -5.268
+TNS   : -10.015
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.169
+TNS   : -322.837
+
+Type  : Slow 1200mV 85C Model Setup 'control:inst25|fstate.Actualiza_Posc'
+Slack : -2.536
+TNS   : -8.536
+
+Type  : Slow 1200mV 85C Model Setup 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -2.512
+TNS   : -57.370
+
+Type  : Slow 1200mV 85C Model Setup 'El_reset'
+Slack : -0.934
+TNS   : -4.425
+
+Type  : Slow 1200mV 85C Model Setup 'control:inst25|fstate.Choca'
+Slack : -0.211
+TNS   : -0.377
+
+Type  : Slow 1200mV 85C Model Setup 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 161996.456
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.358
+Type  : Slow 1200mV 85C Model Hold 'actualiza_actual:inst90|actual[0]'
+Slack : -5.168
+TNS   : -10.142
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.609
+TNS   : -13.312
+
+Type  : Slow 1200mV 85C Model Hold 'El_reset'
+Slack : -0.592
+TNS   : -10.100
+
+Type  : Slow 1200mV 85C Model Hold 'control:inst25|fstate.Actualiza_Posc'
+Slack : -0.478
+TNS   : -0.931
+
+Type  : Slow 1200mV 85C Model Hold 'control:inst25|fstate.Decide_Accion'
+Slack : -0.442
+TNS   : -0.862
+
+Type  : Slow 1200mV 85C Model Hold 'control:inst25|fstate.Choca'
+Slack : -0.088
+TNS   : -0.088
+
+Type  : Slow 1200mV 85C Model Hold 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.344
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 48.541
+Type  : Slow 1200mV 85C Model Hold 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.344
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
-Slack : 1.009
+Type  : Slow 1200mV 85C Model Hold 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.555
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.580
+Type  : Slow 1200mV 85C Model Hold 'control:inst25|fstate.Actual_sent'
+Slack : 2.842
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
-Slack : 43.520
+Type  : Slow 1200mV 85C Model Recovery 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -2.886
+TNS   : -62.598
+
+Type  : Slow 1200mV 85C Model Recovery 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -1.993
+TNS   : -36.552
+
+Type  : Slow 1200mV 85C Model Recovery 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -1.886
+TNS   : -13.175
+
+Type  : Slow 1200mV 85C Model Recovery 'control:inst25|fstate.Actualiza_Posc'
+Slack : -0.615
+TNS   : -2.460
+
+Type  : Slow 1200mV 85C Model Recovery 'actualiza_actual:inst90|actual[0]'
+Slack : -0.563
+TNS   : -0.725
+
+Type  : Slow 1200mV 85C Model Recovery 'control:inst25|fstate.Decide_Accion'
+Slack : -0.460
+TNS   : -0.920
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -0.402
+TNS   : -28.581
+
+Type  : Slow 1200mV 85C Model Recovery 'control:inst25|fstate.Actual_sent'
+Slack : 0.306
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Type  : Slow 1200mV 85C Model Recovery 'control:inst25|fstate.Choca'
+Slack : 0.725
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'actualiza_actual:inst90|actual[0]'
+Slack : -4.402
+TNS   : -8.792
+
+Type  : Slow 1200mV 85C Model Removal 'control:inst25|fstate.Choca'
+Slack : -0.898
+TNS   : -3.592
+
+Type  : Slow 1200mV 85C Model Removal 'control:inst25|fstate.Actual_sent'
+Slack : -0.461
+TNS   : -0.922
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : -0.443
+TNS   : -2.146
+
+Type  : Slow 1200mV 85C Model Removal 'control:inst25|fstate.Decide_Accion'
+Slack : -0.321
+TNS   : -0.642
+
+Type  : Slow 1200mV 85C Model Removal 'control:inst25|fstate.Actualiza_Posc'
+Slack : 0.525
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.942
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.322
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.700
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'El_reset'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'actualiza_actual:inst90|actual[0]'
+Slack : -2.818
+TNS   : -385.253
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control:inst25|fstate.Actualiza_Posc'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control:inst25|fstate.Choca'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control:inst25|fstate.Actual_sent'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'control:inst25|fstate.Decide_Accion'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : 9.681
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 499.743
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 10499.834
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 80999.746
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -6.965
+TNS   : -46.158
+
+Type  : Slow 1200mV 0C Model Setup 'control:inst25|fstate.Decide_Accion'
+Slack : -6.888
+TNS   : -13.761
+
+Type  : Slow 1200mV 0C Model Setup 'control:inst25|fstate.Actual_sent'
+Slack : -5.758
+TNS   : -11.193
+
+Type  : Slow 1200mV 0C Model Setup 'actualiza_actual:inst90|actual[0]'
+Slack : -4.745
+TNS   : -9.009
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.631
+TNS   : -277.659
+
+Type  : Slow 1200mV 0C Model Setup 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -2.187
+TNS   : -49.704
+
+Type  : Slow 1200mV 0C Model Setup 'control:inst25|fstate.Actualiza_Posc'
+Slack : -2.124
+TNS   : -7.057
+
+Type  : Slow 1200mV 0C Model Setup 'El_reset'
+Slack : -0.851
+TNS   : -3.811
+
+Type  : Slow 1200mV 0C Model Setup 'control:inst25|fstate.Choca'
+Slack : -0.069
+TNS   : -0.069
+
+Type  : Slow 1200mV 0C Model Setup 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 161996.808
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'actualiza_actual:inst90|actual[0]'
+Slack : -4.752
+TNS   : -9.303
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.552
+TNS   : -11.973
+
+Type  : Slow 1200mV 0C Model Hold 'control:inst25|fstate.Actualiza_Posc'
+Slack : -0.434
+TNS   : -0.883
+
+Type  : Slow 1200mV 0C Model Hold 'El_reset'
+Slack : -0.417
+TNS   : -6.371
+
+Type  : Slow 1200mV 0C Model Hold 'control:inst25|fstate.Decide_Accion'
+Slack : -0.354
+TNS   : -0.683
+
+Type  : Slow 1200mV 0C Model Hold 'control:inst25|fstate.Choca'
+Slack : -0.101
+TNS   : -0.101
+
+Type  : Slow 1200mV 0C Model Hold 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'control:inst25|fstate.Actual_sent'
+Slack : 2.593
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -2.517
+TNS   : -53.877
+
+Type  : Slow 1200mV 0C Model Recovery 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -1.687
+TNS   : -30.829
+
+Type  : Slow 1200mV 0C Model Recovery 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -1.593
+TNS   : -11.127
+
+Type  : Slow 1200mV 0C Model Recovery 'control:inst25|fstate.Actualiza_Posc'
+Slack : -0.483
+TNS   : -1.932
+
+Type  : Slow 1200mV 0C Model Recovery 'control:inst25|fstate.Decide_Accion'
+Slack : -0.359
+TNS   : -0.718
+
+Type  : Slow 1200mV 0C Model Recovery 'actualiza_actual:inst90|actual[0]'
+Slack : -0.301
+TNS   : -0.301
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -0.295
+TNS   : -16.851
+
+Type  : Slow 1200mV 0C Model Recovery 'control:inst25|fstate.Actual_sent'
 Slack : 0.312
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 48.740
+Type  : Slow 1200mV 0C Model Recovery 'control:inst25|fstate.Choca'
+Slack : 0.705
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.909
+Type  : Slow 1200mV 0C Model Removal 'actualiza_actual:inst90|actual[0]'
+Slack : -4.099
+TNS   : -8.186
+
+Type  : Slow 1200mV 0C Model Removal 'control:inst25|fstate.Choca'
+Slack : -0.762
+TNS   : -3.048
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : -0.382
+TNS   : -1.459
+
+Type  : Slow 1200mV 0C Model Removal 'control:inst25|fstate.Actual_sent'
+Slack : -0.353
+TNS   : -0.706
+
+Type  : Slow 1200mV 0C Model Removal 'control:inst25|fstate.Decide_Accion'
+Slack : -0.214
+TNS   : -0.428
+
+Type  : Slow 1200mV 0C Model Removal 'control:inst25|fstate.Actualiza_Posc'
+Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.549
+Type  : Slow 1200mV 0C Model Removal 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.826
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
-Slack : 45.906
+Type  : Slow 1200mV 0C Model Removal 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 1.175
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.188
+Type  : Slow 1200mV 0C Model Removal 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.531
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 49.372
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'El_reset'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'actualiza_actual:inst90|actual[0]'
+Slack : -2.388
+TNS   : -321.356
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control:inst25|fstate.Actualiza_Posc'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control:inst25|fstate.Choca'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control:inst25|fstate.Actual_sent'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'control:inst25|fstate.Decide_Accion'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 9.672
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.556
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 499.738
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 49.467
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 10499.846
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 80999.743
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -4.095
+TNS   : -27.222
+
+Type  : Fast 1200mV 0C Model Setup 'control:inst25|fstate.Decide_Accion'
+Slack : -4.007
+TNS   : -8.007
+
+Type  : Fast 1200mV 0C Model Setup 'control:inst25|fstate.Actual_sent'
+Slack : -3.282
+TNS   : -6.373
+
+Type  : Fast 1200mV 0C Model Setup 'actualiza_actual:inst90|actual[0]'
+Slack : -2.920
+TNS   : -5.481
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -2.407
+TNS   : -161.930
+
+Type  : Fast 1200mV 0C Model Setup 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -1.543
+TNS   : -35.641
+
+Type  : Fast 1200mV 0C Model Setup 'control:inst25|fstate.Actualiza_Posc'
+Slack : -1.079
+TNS   : -3.423
+
+Type  : Fast 1200mV 0C Model Setup 'El_reset'
+Slack : -0.097
+TNS   : -0.097
+
+Type  : Fast 1200mV 0C Model Setup 'control:inst25|fstate.Choca'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 161997.947
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'actualiza_actual:inst90|actual[0]'
+Slack : -2.925
+TNS   : -5.735
+
+Type  : Fast 1200mV 0C Model Hold 'El_reset'
+Slack : -0.522
+TNS   : -10.386
+
+Type  : Fast 1200mV 0C Model Hold 'control:inst25|fstate.Decide_Accion'
+Slack : -0.459
+TNS   : -0.895
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.435
+TNS   : -11.647
+
+Type  : Fast 1200mV 0C Model Hold 'control:inst25|fstate.Actualiza_Posc'
+Slack : -0.286
+TNS   : -0.598
+
+Type  : Fast 1200mV 0C Model Hold 'control:inst25|fstate.Choca'
+Slack : -0.107
+TNS   : -0.107
+
+Type  : Fast 1200mV 0C Model Hold 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'control:inst25|fstate.Actual_sent'
+Slack : 1.518
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.781
+TNS   : -39.449
+
+Type  : Fast 1200mV 0C Model Recovery 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -1.288
+TNS   : -24.354
+
+Type  : Fast 1200mV 0C Model Recovery 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -1.248
+TNS   : -8.733
+
+Type  : Fast 1200mV 0C Model Recovery 'actualiza_actual:inst90|actual[0]'
+Slack : -0.581
+TNS   : -0.913
+
+Type  : Fast 1200mV 0C Model Recovery 'control:inst25|fstate.Actualiza_Posc'
+Slack : -0.473
+TNS   : -1.892
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -0.332
+TNS   : -26.440
+
+Type  : Fast 1200mV 0C Model Recovery 'control:inst25|fstate.Decide_Accion'
+Slack : -0.159
+TNS   : -0.318
+
+Type  : Fast 1200mV 0C Model Recovery 'control:inst25|fstate.Actual_sent'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'control:inst25|fstate.Choca'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'actualiza_actual:inst90|actual[0]'
+Slack : -2.385
+TNS   : -4.765
+
+Type  : Fast 1200mV 0C Model Removal 'control:inst25|fstate.Choca'
+Slack : -0.657
+TNS   : -2.628
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : -0.408
+TNS   : -7.876
+
+Type  : Fast 1200mV 0C Model Removal 'control:inst25|fstate.Actual_sent'
+Slack : -0.374
+TNS   : -0.748
+
+Type  : Fast 1200mV 0C Model Removal 'control:inst25|fstate.Decide_Accion'
+Slack : -0.362
+TNS   : -0.724
+
+Type  : Fast 1200mV 0C Model Removal 'control:inst25|fstate.Actualiza_Posc'
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.677
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.915
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'El_reset'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'actualiza_actual:inst90|actual[0]'
+Slack : -1.601
+TNS   : -137.511
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control:inst25|fstate.Actualiza_Posc'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control:inst25|fstate.Choca'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control:inst25|fstate.Actual_sent'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'control:inst25|fstate.Decide_Accion'
+Slack : -1.000
+TNS   : -2.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : 9.444
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst81|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 499.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst81|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 10499.788
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst81|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 80999.782
 TNS   : 0.000
 
 ------------------------------------------------------------

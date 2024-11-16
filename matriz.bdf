@@ -38,7 +38,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -928 1328 -752 1344)
+	(rect -1168 1336 -992 1352)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "Linea" (rect 9 0 34 12)(font "Arial" ))
 	(pt 176 8)
@@ -51,11 +51,11 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -984 1344 -928 1360))
+	(annotation_block (location)(rect -1224 1352 -1168 1368))
 )
 (pin
 	(input)
-	(rect -920 1400 -744 1416)
+	(rect -1200 1464 -1024 1480)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "Muro" (rect 9 0 32 12)(font "Arial" ))
 	(pt 176 8)
@@ -68,7 +68,7 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -976 1416 -920 1432))
+	(annotation_block (location)(rect -1256 1480 -1200 1496))
 )
 (pin
 	(input)
@@ -3951,7 +3951,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -712 1320 -664 1352)
+	(rect -968 1368 -920 1400)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst87" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -4193,7 +4193,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -688 1376 -640 1408)
+	(rect -968 1456 -920 1488)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst26" (rect 3 21 32 33)(font "Arial" ))
 	(port
@@ -7079,6 +7079,78 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 160 64))
 	)
 	(annotation_block (parameter)(rect 3384 1784 3568 1816))
+)
+(symbol
+	(rect -848 1320 -688 1432)
+	(text "antirebote" (rect 5 0 53 12)(font "Arial" ))
+	(text "inst20" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pulsador" (rect 0 0 41 12)(font "Arial" ))
+		(text "pulsador" (rect 21 59 62 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "salida" (rect 0 0 28 12)(font "Arial" ))
+		(text "salida" (rect 116 27 144 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 96))
+	)
+)
+(symbol
+	(rect -824 1488 -664 1600)
+	(text "antirebote" (rect 5 0 53 12)(font "Arial" ))
+	(text "inst24" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pulsador" (rect 0 0 41 12)(font "Arial" ))
+		(text "pulsador" (rect 21 59 62 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "salida" (rect 0 0 28 12)(font "Arial" ))
+		(text "salida" (rect 116 27 144 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 96))
+	)
 )
 (connector
 	(pt 192 552)
@@ -10113,22 +10185,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -752 1408)
-	(pt -744 1408)
-)
-(connector
-	(pt -744 1408)
-	(pt -736 1408)
-)
-(connector
-	(pt -760 1336)
-	(pt -752 1336)
-)
-(connector
-	(pt -752 1336)
-	(pt -712 1336)
-)
-(connector
 	(text "reset" (rect 170 384 194 396)(font "Arial" ))
 	(pt 160 400)
 	(pt 208 400)
@@ -10274,14 +10330,6 @@ applicable agreement for further details.
 	(pt 2672 1560)
 )
 (connector
-	(pt -664 1336)
-	(pt -656 1336)
-)
-(connector
-	(pt -656 1336)
-	(pt -656 1344)
-)
-(connector
 	(pt -656 1344)
 	(pt -600 1344)
 )
@@ -10363,18 +10411,6 @@ applicable agreement for further details.
 	(pt 280 128)
 	(pt 288 128)
 	(bus)
-)
-(connector
-	(pt -632 1360)
-	(pt -632 1392)
-)
-(connector
-	(pt -600 1360)
-	(pt -632 1360)
-)
-(connector
-	(pt -632 1392)
-	(pt -640 1392)
 )
 (connector
 	(text "reset" (rect 2762 1240 2786 1252)(font "Arial" ))
@@ -10795,14 +10831,6 @@ applicable agreement for further details.
 	(pt 2472 1200)
 	(pt 2504 1200)
 	(bus)
-)
-(connector
-	(pt -736 1408)
-	(pt -736 1392)
-)
-(connector
-	(pt -736 1392)
-	(pt -688 1392)
 )
 (connector
 	(pt 3504 864)
@@ -12262,6 +12290,86 @@ applicable agreement for further details.
 	(pt 3384 1848)
 	(pt 3400 1848)
 )
+(connector
+	(pt -1000 1344)
+	(pt -992 1344)
+)
+(connector
+	(pt -992 1344)
+	(pt -984 1344)
+)
+(connector
+	(pt -600 1360)
+	(pt -640 1360)
+)
+(connector
+	(pt -656 1344)
+	(pt -656 1352)
+)
+(connector
+	(pt -656 1352)
+	(pt -688 1352)
+)
+(connector
+	(pt -984 1344)
+	(pt -984 1384)
+)
+(connector
+	(pt -984 1384)
+	(pt -968 1384)
+)
+(connector
+	(pt -920 1384)
+	(pt -848 1384)
+)
+(connector
+	(text "c2" (rect -886 1336 -875 1348)(font "Arial" ))
+	(pt -848 1352)
+	(pt -888 1352)
+)
+(connector
+	(text "reset" (rect -878 1352 -854 1364)(font "Arial" ))
+	(pt -848 1368)
+	(pt -880 1368)
+)
+(connector
+	(pt -1032 1472)
+	(pt -1024 1472)
+)
+(connector
+	(pt -1024 1472)
+	(pt -968 1472)
+)
+(connector
+	(pt -640 1360)
+	(pt -640 1520)
+)
+(connector
+	(pt -640 1520)
+	(pt -664 1520)
+)
+(connector
+	(pt -912 1472)
+	(pt -920 1472)
+)
+(connector
+	(pt -912 1472)
+	(pt -912 1552)
+)
+(connector
+	(pt -912 1552)
+	(pt -824 1552)
+)
+(connector
+	(text "reset" (rect -870 1520 -846 1532)(font "Arial" ))
+	(pt -824 1536)
+	(pt -872 1536)
+)
+(connector
+	(text "c2" (rect -854 1504 -843 1516)(font "Arial" ))
+	(pt -824 1520)
+	(pt -856 1520)
+)
 (junction (pt 472 440))
 (junction (pt 768 216))
 (junction (pt 816 440))
@@ -12326,8 +12434,6 @@ applicable agreement for further details.
 (junction (pt 3152 -16))
 (junction (pt 3152 -120))
 (junction (pt 2240 960))
-(junction (pt -744 1408))
-(junction (pt -752 1336))
 (junction (pt 3296 1256))
 (junction (pt 2936 1864))
 (junction (pt 2984 1576))
@@ -12370,6 +12476,8 @@ applicable agreement for further details.
 (junction (pt 3672 1688))
 (junction (pt 3664 1840))
 (junction (pt 3912 848))
+(junction (pt -992 1344))
+(junction (pt -1024 1472))
 (text "Logica para grabar un muro" (rect -288 152 -130 166)(font "Arial" (font_size 8)))
 (text "A es arriba, B derecha,C abajo, D izquierda" (rect -288 168 -42 182)(font "Arial" (font_size 8)))
 (text "Si no quiero habilitar ninguno entro con 1111 al decoder" (rect -352 560 -36 574)(font "Arial" (font_size 8)))
