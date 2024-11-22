@@ -7081,7 +7081,7 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 3384 1784 3568 1816))
 )
 (symbol
-	(rect -848 1320 -688 1432)
+	(rect -848 1312 -688 1424)
 	(text "antirebote" (rect 5 0 53 12)(font "Arial" ))
 	(text "inst20" (rect 8 96 37 108)(font "Arial" ))
 	(port
@@ -10330,10 +10330,6 @@ applicable agreement for further details.
 	(pt 2672 1560)
 )
 (connector
-	(pt -656 1344)
-	(pt -600 1344)
-)
-(connector
 	(pt -424 1312)
 	(pt -320 1312)
 )
@@ -12303,34 +12299,12 @@ applicable agreement for further details.
 	(pt -640 1360)
 )
 (connector
-	(pt -656 1344)
-	(pt -656 1352)
-)
-(connector
-	(pt -656 1352)
-	(pt -688 1352)
-)
-(connector
 	(pt -984 1344)
 	(pt -984 1384)
 )
 (connector
 	(pt -984 1384)
 	(pt -968 1384)
-)
-(connector
-	(pt -920 1384)
-	(pt -848 1384)
-)
-(connector
-	(text "c2" (rect -886 1336 -875 1348)(font "Arial" ))
-	(pt -848 1352)
-	(pt -888 1352)
-)
-(connector
-	(text "reset" (rect -878 1352 -854 1364)(font "Arial" ))
-	(pt -848 1368)
-	(pt -880 1368)
 )
 (connector
 	(pt -1032 1472)
@@ -12369,6 +12343,32 @@ applicable agreement for further details.
 	(text "c2" (rect -854 1504 -843 1516)(font "Arial" ))
 	(pt -824 1520)
 	(pt -856 1520)
+)
+(connector
+	(pt -912 1384)
+	(pt -912 1376)
+)
+(connector
+	(pt -920 1384)
+	(pt -912 1384)
+)
+(connector
+	(pt -912 1376)
+	(pt -848 1376)
+)
+(connector
+	(text "c2" (rect -886 1328 -875 1340)(font "Arial" ))
+	(pt -848 1344)
+	(pt -888 1344)
+)
+(connector
+	(text "reset" (rect -878 1344 -854 1356)(font "Arial" ))
+	(pt -848 1360)
+	(pt -880 1360)
+)
+(connector
+	(pt -688 1344)
+	(pt -600 1344)
 )
 (junction (pt 472 440))
 (junction (pt 768 216))

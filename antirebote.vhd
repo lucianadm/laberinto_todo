@@ -15,8 +15,8 @@ end antirebote;
 architecture Behavioral of antirebote is
     signal estado_actual  : std_logic := '0';
     signal estado_anterior : std_logic := '0';
-    signal contador       : integer range 0 to 20000 := 0; -- Ajusta este rango para el tiempo de antirrebote
-    constant umbral       : integer := 20000; -- Ajusta según el tiempo de antirrebote necesario
+    signal contador       : integer range 0 to 1;--20000 := 0; -- Ajusta este rango para el tiempo de antirrebote
+    constant umbral       : integer :=1; --20000; -- Ajusta según el tiempo de antirrebote necesario
 begin
 
     process(clk, reset)
